@@ -1,0 +1,79 @@
+.bonus {
+  background-image: url(../img/bonus-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 510px;
+  padding: 22px 0 0 8px;
+  &__title {
+    color: #ffffff;
+    font-family: 'Fira Sans';
+    font-size: 64px;
+    font-weight: 700;
+  }
+  &__text {
+    color: #ffffff;
+    font-family: 'Fira Sans';
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 20.34px;
+    width: 175px;
+    margin-top: 5px;
+    margin-left: 22px;
+    position: relative;
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 146px;
+      background-color: #ffffff;
+      position: absolute;
+      left: -19px;
+    }
+  }
+  &__form {
+    margin-top: 102px;
+    margin-left: 4px;
+    input {
+      background: none;
+      outline: none;
+      background-image: url(../img/bonus-form.png);
+      background-repeat: no-repeat;
+      border: none;
+      width: 254px;
+      height: 35px;
+      padding: 11px 14px 7px 51px;
+      color: #ffffff;
+      font-family: 'Fira Sans';
+      font-size: 15px;
+      font-style: italic;
+      padding-bottom: 9.5px;
+      &::-webkit-input-placeholder {
+        color: #ffffff;
+      }
+    }
+  }
+  &__btn {
+    border: none;
+    outline: none;
+    background: none;
+    background-image: url(../img/bonus-btn.png);
+    background-repeat: no-repeat;
+    width: 254px;
+    height: 42px;
+    margin-top: 24px;
+    color: #000000;
+    font-family: 'Akrobat-ExtraBold';
+    font-size: 27px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__descr {
+    width: 170px;
+    color: #ffffff;
+    font-family: 'FiraSans-UltraLight';
+    font-size: 11px;
+    margin-left: 21px;
+    margin-top: 10px;
+  }
+}

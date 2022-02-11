@@ -1,0 +1,2314 @@
+@font-face {
+  font-family: 'ALS Schlangesans';
+  font-weight: 400;
+  src: url('../fonts/ALSSchlangesans.woff2') format('woff2'),
+    url('../fonts/ALSSchlangesans.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'ALS Schlangesans';
+  font-weight: 700;
+  src: url('../fonts/ALSSchlangesans-Bold.woff2') format('woff2'),
+    url('../fonts/ALSSchlangesans-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'ALS Schlangesans - Black';
+  font-weight: 400;
+  src: url('../fonts/ALSSchlangesans-Black.woff2') format('woff2'),
+    url('../fonts/ALSSchlangesans-Black.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Akrobat';
+  font-weight: 700;
+  src: url('../fonts/Akrobat-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Akrobat - Black';
+  font-weight: 400;
+  src: url('../fonts/Akrobat-Black.woff') format('woff');
+}
+
+html {
+    scroll-behavior: smooth; 
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+select {
+  width: 500px;
+  height: 55px;
+  border: 3px solid rgb(255, 196, 74);
+  padding-left: 10px;
+  margin-bottom: 25px;
+  -webkit-appearance: none;
+  -webkit-border-radius: 20px;
+  color: #2d2d2d;
+  font-family: 'ALS Schlangesans';
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  padding-top: 5px;
+  background-color: rgb(247, 247, 247);
+}
+
+.mobile-header {
+  display: none;
+}
+
+.page-header__logo {
+  width: 400px;
+  z-index: 2;
+}
+
+.page-header__contacts {
+  margin-top: 30px;
+  text-align: center;
+  z-index: 2;
+}
+
+.page-header__contacts-phone {
+  color: #2f629d;
+  font-family: 'ALS Schlangesans - Black';
+  font-size: 31px;
+  font-weight: 400;
+}
+
+.page-header__contacts-city {
+  padding-top: 10px;
+  color: #414040;
+  font-family: 'ALS Schlangesans';
+  font-size: 31px;
+  font-weight: 700;
+}
+
+.page-header__call {
+  width: 400px;
+  text-align: center;
+  z-index: 3;
+}
+
+.page-header__call-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 313px;
+  height: 46px;
+  background-color: #ffdb4d;
+  border-radius: 20px;
+  border: 0;
+  color: #000000;
+  font-family: 'ALS Schlangesans';
+  font-size: 26px;
+  font-weight: 700;
+  text-decoration: none;
+  margin: 0 auto;
+}
+
+.page-header__call-btn:hover {
+  background-color: #ffb400;
+}
+
+.page-header__call-desc {
+  padding-top: 10px;
+  color: #414040;
+  font-family: 'ALS Schlangesans';
+  font-size: 31px;
+  font-weight: 700;
+}
+
+.offer {
+  height: 700px;
+  padding-bottom: 35px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.offer:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 180px;
+  background-image: url(../img/offer__before.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: -135px;
+  z-index: 2;
+}
+
+.offer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.offer__top {
+  width: 100%;
+  height: 180px;
+  padding-top: 20px;
+  background-image: url(../img/offer-top_bg.png);
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.offer__title {
+  margin: 0;
+  color: #141414;
+  font-family: 'ALS Schlangesans - Black';
+  font-size: 56px;
+  font-weight: 400;
+}
+
+.offer__top p {
+  max-width: 1040px;
+  margin: 0;
+  padding-top: 5px;
+  padding-left: 25px;
+  color: #0f0f0f;
+  font-family: 'ALS Schlangesans';
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.offer__bottom {
+  margin-top: 92px;
+}
+
+.offer__free-calc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 577px;
+  height: 59px;
+  margin: 0 auto;
+  background-color: #ffdb4d;
+  border-radius: 35px;
+  border: 0;
+  color: #000000;
+  font-family: 'ALS Schlangesans - Black';
+  font-size: 39px;
+  font-weight: 400;
+  text-align: center;
+  box-shadow: inset 0 4px 5px 2px rgba(0, 0, 0, 0.5),
+    inset 0 0 6px 1px rgba(245, 201, 30, 0.35);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.offer__free-calc:hover {
+  background-color: #ffb400;
+}
+
+.offer__features {
+  margin: 0;
+  margin-top: 80px;
+  margin-left: 30px;
+  padding: 0;
+  column-count: 2;
+}
+
+.offer__item {
+  margin-bottom: 12px;
+  color: #ffffff;
+  font-family: 'ALS Schlangesans';
+  font-size: 27px;
+  font-weight: 700;
+}
+
+.specialization {
+  background-color: #fff;
+  padding-bottom: 15px;
+}
+
+.specialization .container {
+  display: flex;
+  padding-top: 24px;
+}
+
+.specialization__img {
+  margin-left: 15px;
+}
+
+.specialization__text {
+  margin-top: 25px;
+  margin-left: 36px;
+}
+
+.specialization__title {
+  color: #064880;
+  font-family: 'ALS Schlangesans - Black';
+  font-size: 43px;
+  font-weight: 400;
+}
+
+.specialization__desc {
+  margin-top: 30px;
+  border-left: 2px solid #000;
+  padding-left: 30px;
+  color: #000000;
+  font-family: 'ALS Schlangesans';
+  font-size: 27px;
+  font-weight: 400;
+}
+
+.calculation {
+  height: 717px;
+  padding-top: 40px;
+  padding-bottom: 52px;
+  background-image: url(../img/calculation_bg.jpg);
+  background-position: center;
+}
+
+.calculation__title {
+  max-width: 640px;
+  margin: 0 auto;
+  color: #ffffff;
+  font-family: 'ALS Schlangesans - Black';
+  font-size: 52px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.calculation__body {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 55px;
+}
+
+.calculation__form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.calculation__result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 331px;
+  height: 331px;
+  margin-top: 10px;
+  margin-left: 20px;
+  background-image: url(../img/calc_bg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.calculation__progress {
+  margin-top: 18px;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.37);
+  color: #617392;
+  font-family: Akrobat;
+  font-size: 31px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 65px;
+}
+
+.calculation__progress span {
+  display: block;
+  background-clip: text;
+  text-shadow: 0 3px 2px rgba(31, 42, 68, 0.14);
+  color: #ffffff;
+  font-family: 'Akrobat - Black';
+  font-size: 90px;
+  font-weight: 400;
+}
+
+.calculation__button {
+  width: 386px;
+  height: 59px;
+  margin-top: 70px;
+  background-color: #ffdb4d;
+  border-radius: 80px;
+  border: 0;
+  color: #000000;
+  font-family: 'ALS Schlangesans - Black';
+  font-size: 39px;
+  font-weight: 400;
+  box-shadow: inset 0 4px 5px 2px rgba(0, 0, 0, 0.5),
+    inset 0 0 6px 1px rgba(245, 201, 30, 0.35);
+  cursor: pointer;
+}
+
+.calculation__button:hover {
+  background-color: #ffb400;
+}
+
+.calculation__range {
+  width: 547px;
+  height: 205px;
+  margin-left: -20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url(../img/budget_bg.png);
+}
+
+.calculation__range-title {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  color: #2d2d2d;
+  font-family: 'ALS Schlangesans';
+  font-size: 23px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.calculation__range-subtitle {
+  align-self: flex-start;
+  margin-left: 50px;
+  color: #2d2d2d;
+  font-family: 'ALS Schlangesans';
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 38.52px;
+}
+
+input[type='range'] {
+  -webkit-appearance: none; /* Скрывает слайдер, чтобы можно было создать свой */
+  width: 470px; /* Указание параметра ширины требуется для Firefox. */
+}
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type='range']:focus {
+  outline: none; /* Убирает голубую границу у элемента. Хотя, возможно, и стоит создавать некоторое оформления для состояния фокуса в целях обеспечения доступности. */
+}
+
+input[type='range']::-ms-track {
+  width: 470px;
+  cursor: pointer;
+  background: transparent; /* Скрывает слайдер, чтобы можно было добавить собственные стили. */
+  border-color: transparent;
+  color: transparent;
+}
+
+/* Специальные правила для браузеров на движках WebKit/Blink */
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 8px solid #ffb400;
+  height: 33px;
+  width: 33px;
+  border-radius: 50%;
+  background: #bb8401;
+  cursor: pointer;
+  margin-top: -10px; /* Вам нужно указать значение для поля в Chrome, но в Firefox и IE это происходит автоматически */
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; /* Добавляем классные эффекты для слайдера! */
+}
+
+/* Тоже самое для Firefox */
+input[type='range']::-moz-range-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+/* Тоже самое для IE */
+input[type='range']::-ms-thumb {
+  border: 1px solid #ffb400;
+  height: 17px;
+  width: 16px;
+  border-radius: 20px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 17px;
+  cursor: pointer;
+  background: rgb(35, 49, 47);
+  border-radius: 20px;
+  border: 1px solid #ffb400;
+}
+
+input[type='range']:focus::-webkit-slider-runnable-track {
+  background: rgb(35, 49, 47);
+}
+
+input[type='range']::-moz-range-track {
+  width: 100%;
+  height: 17px;
+  cursor: pointer;
+  background: rgb(35, 49, 47);
+  border-radius: 20px;
+  border: 1px solid #ffb400;
+}
+
+input[type='range']::-ms-track {
+  width: 100%;
+  height: 17px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+input[type='range']::-ms-fill-lower {
+  background: rgb(35, 49, 47);
+  border: 1px solid #ffb400;
+  border-radius: 20px;
+}
+input[type='range']:focus::-ms-fill-lower {
+  background: rgb(35, 49, 47);
+}
+input[type='range']::-ms-fill-upper {
+  background: rgb(35, 49, 47);
+  border: 1px solid #ffb400;
+  border-radius: 20px;
+}
+input[type='range']:focus::-ms-fill-upper {
+  background: rgb(35, 49, 47);
+}
+
+.calculation__range-result {
+  width: 150px;
+  height: 30px;
+  margin-bottom: 5px;
+  border-radius: 20px;
+  border: 2px solid #23272f;
+  background-color: #dadada;
+  color: #191919;
+  font-family: 'Fira Sans - Book Italic';
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 35.51px;
+  text-align: center;
+  padding-left: 0;
+  font-style: italic;
+}
+
+.step-2,
+.step-3 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.step-2 .calculation__title {
+  margin-top: 30px;
+  max-width: 750px;
+}
+
+.step-2__loading {
+  margin-top: 140px;
+  margin-bottom: 140px;
+  text-align: center;
+}
+
+.calculation__time {
+  color: #ffffff;
+  font-family: 'ALS Schlangesans';
+  font-size: 52px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.calculation__subtitle {
+  max-width: 670px;
+  margin-top: 50px;
+  color: #fcd53d;
+  font-family: 'ALS Schlangesans';
+  font-size: 52px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.step-3 .calculation__title {
+  margin-top: 20px;
+}
+
+.step-3 p {
+  max-width: 834px;
+  margin-top: 50px;
+  color: #ffffff;
+  font-family: 'ALS Schlangesans';
+  font-size: 39px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.step-3 form {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.step-3 input[type='text'] {
+  width: 497px;
+  height: 53px;
+  margin-right: 86px;
+  padding-left: 20px;
+  border-radius: 30px;
+  border: 2px solid #ff8400;
+  color: #2d2d2d;
+  font-family: 'ALS Schlangesans';
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.step-3 input[type='submit'] {
+  display: block;
+  width: 453px;
+  height: 59px;
+  background-color: transparent;
+  background-image: url(../img/step-3_btn.png);
+  border: 0;
+  border-radius: 20px;
+  color: #000000;
+  font-family: 'ALS Schlangesans - Black';
+  font-size: 39px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.step-4 p {
+  max-width: 834px;
+  margin: 0 auto;
+  margin-top: 50px;
+  color: #ffffff;
+  font-family: 'ALS Schlangesans';
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.checkbox input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  margin: 10px 0 0 20px;
+}
+.checkbox__text {
+  margin-top: 60px;
+  position: relative;
+  padding: 0 0 0 50px;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: 'ALS Schlangesans';
+  font-size: 17px;
+  font-weight: 400;
+}
+.checkbox__text:before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 27px;
+  height: 29px;
+  border: 2px solid #fff;
+}
+.checkbox input:checked + .checkbox__text:after {
+  content: '';
+  position: absolute;
+  top: -9px;
+  left: -8px;
+  width: 39px;
+  height: 38px;
+  background-image: url(../img/checkbox.png);
+}
+
+.price {
+  padding-top: 59px;
+  padding-bottom: 82px;
+}
+
+.price__title {
+  color: #064880;
+  font-family: 'ALS Schlangesans - Black';
+  font-size: 65px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.price__options {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 60px;
+}
+
+.price__options-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 397px;
+  height: 69px;
+  background-image: url(../img/price-options-title_ng.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  color: #ffffff;
+  font-family: 'ALS Schlangesans - Black';
+  font-size: 47px;
+  font-weight: 400;
+}
+
+.price__options-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-right: 23px;
+  border-right: 2px solid #000;
+}
+
+.price__options-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-left: 23px;
+}
+
+.price__options-right .price__options-subtitle {
+  margin-top: 15px;
+}
+
+.price__options-right p {
+  margin-top: 5px;
+  margin-bottom: 0;
+  color: #000000;
+  font-family: 'ALS Schlangesans';
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.price__options-subtitle {
+  margin-top: 35px;
+  color: #000000;
+  font-family: 'ALS Schlangesans - Black';
+  font-size: 34px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.price__options-list {
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.options-item__title {
+  margin-left: 20px;
+  color: #000000;
+  font-family: 'ALS Schlangesans';
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.options-item__desc {
+  margin-left: 20px;
+  color: #000000;
+  font-family: 'ALS Schlangesans';
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.options-item__list {
+  height: 70px;
+  color: #000000;
+  font-family: 'ALS Schlangesans';
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.plus {
+  list-style: none;
+}
+
+.plus-one {
+  font-family: 'ALS Schlangesans';
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.plus:before {
+  content: '';
+  background-image: url(../img/plus.png);
+  display: inline-block;
+  width: 10px;
+  height: 9px;
+  margin-right: 8px;
+  margin-left: -18px;
+}
+
+.options__line {
+  width: 2px;
+  height: auto;
+  background-color: #000;
+}
+
+.options-item__price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 70px;
+  background-image: url(../img/price_bg.png);
+  background-repeat: no-repeat;
+  width: 181px;
+  height: 50px;
+  color: #000000;
+  font-family: 'ALS Schlangesans';
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.options-item__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 228px;
+  height: 35px;
+  background-color: #ffdb4d;
+  border-radius: 35px;
+  margin-top: 15px;
+  border: 0;
+  color: #000000;
+  font-family: 'ALS Schlangesans - Black';
+  font-size: 23px;
+  font-weight: 400;
+  box-shadow: inset 0 4px 5px 2px rgba(0, 0, 0, 0.5),
+    inset 0 0 6px 1px rgba(245, 201, 30, 0.35);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.options-item__btn:hover {
+  background-color: #ffb400;
+}
+
+.order {
+  padding-top: 31px;
+  padding-bottom: 43px;
+  background-image: url(../img/order_bg.jpg);
+  background-position: center;
+}
+
+.order__title {
+  margin-bottom: 25px;
+  color: #ffffff;
+  font-family: 'ALS Schlangesans - Black';
+  font-size: 66px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.order__body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.order__text {
+  max-width: 513px;
+  border-left: 1px solid #fff;
+  padding-left: 38px;
+  margin-left: 40px;
+  color: #ffffff;
+  font-family: 'ALS Schlangesans';
+  font-size: 27px;
+  font-weight: 700;
+}
+
+.order__form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 50px;
+}
+
+.order__form input {
+  width: 325px;
+  height: 35px;
+  border-radius: 30px;
+  border: 2px solid #ff8400;
+  color: #2d2d2d;
+  font-family: 'ALS Schlangesans';
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.order__form button {
+  display: block;
+  width: 278px;
+  height: 38px;
+  margin-top: 25px;
+  background-color: transparent;
+  background-color: #ffdb4d;
+  border: 0;
+  border-radius: 20px;
+  color: #000000;
+  font-family: 'ALS Schlangesans - Black';
+  font-size: 26px;
+  font-weight: 400;
+  box-shadow: inset 0 4px 5px 2px rgba(0, 0, 0, 0.5),
+    inset 0 0 6px 1px rgba(245, 201, 30, 0.35);
+  cursor: pointer;
+}
+
+.order__form button:hover {
+  background-color: #ffb400;
+}
+
+.check-list {
+  padding-top: 55px;
+  position: relative;
+}
+
+.check-list:after {
+  content: '';
+  background-image: url(../img/check-list_after.png);
+  display: block;
+  width: 100%;
+  height: 81px;
+  margin-top: -2px;
+  background-size: cover;
+  position: absolute;
+  background-position: center;
+  z-index: 10;
+}
+
+.check-list__title {
+  padding-left: 10px;
+  color: #064880;
+  font-family: 'ALS Schlangesans - Black';
+  font-size: 49px;
+  font-weight: 400;
+}
+
+.check-list__body {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.check-list__img {
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.check-list__text {
+  margin-left: 35px;
+}
+
+.check-list__text p {
+  margin-left: 35px;
+  margin-bottom: 18px;
+  color: #000000;
+  font-family: 'ALS Schlangesans - Black';
+  font-size: 27px;
+  font-weight: 400;
+}
+
+.check-list__list {
+  list-style-type: none;
+}
+
+.check-list__item {
+  margin-bottom: 20px;
+  color: #000000;
+  font-family: 'ALS Schlangesans';
+  font-size: 23px;
+  font-weight: 700;
+  border-left: 1px solid #000;
+  padding-left: 27px;
+}
+
+.check-list__form {
+  margin-top: 50px;
+  padding-bottom: 70px;
+}
+
+.check-list__form input[type='text'] {
+  width: 360px;
+  height: 45px;
+  margin-right: 15px;
+  background-color: rgb(226, 239, 254);
+  border: 1px solid #2f629d;
+  border-radius: 30px;
+  color: #2d2d2d;
+  font-family: 'ALS Schlangesans';
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.check-list__form input[type='submit'] {
+  width: 295px;
+  height: 49px;
+  background-color: #ffdb4d;
+  border: 0;
+  border-radius: 25px;
+  color: #000000;
+  font-family: 'ALS Schlangesans - Black';
+  font-size: 28px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.check-list__form input[type='submit']:hover {
+  background-color: #ffb400;
+}
+
+.check-list__form .checkbox__text {
+  margin-top: 35px;
+  margin-left: 35px;
+  color: #262626;
+  font-family: 'ALS Schlangesans';
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.check-list__form .checkbox__text:before {
+  border: 2px solid #000;
+  width: 23px;
+  height: 25px;
+  top: 2px;
+  left: -1px;
+}
+
+.check-list__form .checkbox input:checked + .checkbox__text:after {
+  background-image: url(../img/checkbox-2.png);
+  height: 40px;
+}
+
+.video {
+  padding-top: 70px;
+  padding-bottom: 65px;
+  background-image: url(../img/video_bg.jpg);
+  position: relative;
+}
+
+.video:after {
+  content: '';
+  background-image: url(../img/video_after.png);
+  display: block;
+  width: 100%;
+  height: 81px;
+  background-size: cover;
+  position: absolute;
+  bottom: -3px;
+  background-position: bottom center;
+  z-index: 10;
+}
+
+.video__title {
+  color: #ffffff;
+  font-family: 'ALS Schlangesans';
+  font-size: 46px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.video__img {
+  margin: 0 auto;
+  display: block;
+  margin-top: 30px;
+}
+
+.video__desc {
+  margin-top: 35px;
+  margin-left: 30px;
+  color: #ffffff;
+  font-family: 'ALS Schlangesans';
+  font-size: 56px;
+  font-weight: 700;
+}
+
+.video ol {
+  padding: 0;
+  margin-left: 60px;
+  margin-top: 24px;
+}
+
+.video li {
+  padding-left: 24px;
+  color: #ffffff;
+  font-family: 'ALS Schlangesans';
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.portfolio {
+  padding-top: 60px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+.portfolio__title {
+  margin-top: -40px;
+  color: #1e2f43;
+  font-family: 'ALS Schlangesans - Black';
+  font-size: 53px;
+  font-weight: 400;
+}
+
+.portfolio__desc {
+  margin-top: 20px;
+  color: #1e2f43;
+  font-family: 'ALS Schlangesans';
+  font-size: 39px;
+  font-weight: 400;
+}
+
+.portfolio__photos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 35px;
+}
+
+.portfolio__photos img {
+  padding-bottom: 5px;
+}
+
+.contacts {
+  padding-top: 80px;
+  padding-bottom: 55px;
+  background-image: url(../img/contacts_bg.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.contacts .container {
+  display: flex;
+}
+
+.contacts__logo {
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+.contacts__content {
+  margin-left: 90px;
+}
+
+.contacts__content-title {
+  color: #1e2f43;
+  font-family: 'ALS Schlangesans - Black';
+  font-size: 45px;
+  font-weight: 400;
+}
+
+.contacts__phone {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  border-left: 2px solid #000;
+  padding-left: 27px;
+  color: #1e2f43;
+  font-family: 'ALS Schlangesans';
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.contacts__phone span {
+  margin-top: 10px;
+  display: block;
+}
+
+.contacts__content-subtitle {
+  color: #1e2f43;
+  font-family: 'ALS Schlangesans';
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.contacts__content form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.contacts__content input[type='text'] {
+  width: 380px;
+  height: 49px;
+  margin-right: 15px;
+  background-color: rgb(226, 239, 254);
+  border: 1px solid #2f629d;
+  border-radius: 30px;
+  color: #2d2d2d;
+  font-family: 'ALS Schlangesans';
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.contacts__content input[type='submit'] {
+  width: 295px;
+  height: 49px;
+  margin-top: 15px;
+  background-color: #ffdb4d;
+  border: 0;
+  border-radius: 25px;
+  color: #000000;
+  font-family: 'ALS Schlangesans - Black';
+  font-size: 28px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.contacts__content input[type='submit']:hover {
+  background-color: #ffb400;
+}
+
+.page-footer {
+  color: #fff;
+}
+
+.footer__top {
+  background-color: rgb(141, 49, 50);
+  text-align: center;
+  font-family: 'ALS Schlangesans';
+  font-size: 27px;
+  font-weight: 400;
+}
+
+.footer__top a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer__top a:hover {
+  text-decoration: underline;
+}
+
+.footer__bottom {
+  padding: 20px 0;
+  background-color: rgb(32, 38, 50);
+  text-align: center;
+  color: #ffffff;
+  font-family: 'ALS Schlangesans';
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.jq-selectbox__select {
+  background: #fff !important;
+  border: 5px solid rgb(248, 217, 86) !important;
+  border-radius: 25px !important;
+  width: 440px !important;
+  height: 50px !important;
+  margin-bottom: 25px !important;
+}
+
+.jq-selectbox__select-text.placeholder {
+  color: #000 !important;
+  font-family: 'ALS Schlangesans' !important;
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  padding-top: 10px;
+  padding-left: 5px;
+}
+
+.jq-selectbox__select-text {
+  color: #2d2d2d !important;
+  font-family: 'ALS Schlangesans' !important;
+  font-size: 23px !important;
+  font-weight: 700 !important;
+  padding-top: 10px;
+  padding-left: 5px;
+}
+
+.jq-selectbox__trigger {
+  border: 0 !important;
+  top: -3px !important;
+}
+
+.jq-selectbox__trigger-arrow {
+  border: 0 !important;
+  background-image: url('../img/select_arrow.png');
+  width: 21px !important;
+  height: 28px !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  margin-right: 5px;
+}
+
+.jq-selectbox__dropdown {
+  background: #6a6a6a !important;
+  top: 20px !important;
+  padding-top: 35px !important;
+  width: 505px !important;
+  z-index: -1 !important;
+  border-radius: 20px !important;
+  border: 3px solid #fff !important;
+  height: fit-content !important;
+}
+
+.jq-selectbox__dropdown li {
+  border-bottom: 1px solid #fff;
+  color: #fff !important;
+  font-family: 'ALS Schlangesans';
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 35.52px;
+}
+
+.jq-selectbox__dropdown li:last-child {
+  border-bottom: none;
+  border-radius: 0 0 17px 17px;
+}
+
+.contacts__phone a {
+    color: #000;
+    text-decoration: none;
+}
+
+.jq-selectbox li:hover {
+  color: #292929 !important;
+  background: #ffdb4d !important;
+}
+
+.jq-selectbox li.selected {
+  color: #292929 !important;
+  background: #ffdb4d !important;
+}
+
+.jq-selectbox select, .jq-select-multiple select {
+    width: 440px !important;
+    height: 50px !important;
+}
+
+/* свойства модального окна по умолчанию */
+.modal {
+  position: fixed; /* фиксированное положение */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5); /* цвет фона */
+  z-index: 1050;
+  opacity: 0; /* по умолчанию модальное окно прозрачно */
+  -webkit-transition: opacity 200ms ease-in;
+  -moz-transition: opacity 200ms ease-in;
+  transition: opacity 200ms ease-in; /* анимация перехода */
+  pointer-events: none; /* элемент невидим для событий мыши */
+  margin: 0;
+  padding: 0;
+}
+/* при отображении модального окно */
+.modal:target {
+  opacity: 1; /* делаем окно видимым */
+  pointer-events: auto; /* элемент видим для событий мыши */
+  overflow-y: auto; /* добавляем прокрутку по y, когда элемент не помещается на страницу */
+}
+/* ширина модального окна и его отступы от экрана */
+.modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 10px;
+}
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 400px;
+    margin: 30px auto; /* для отображения модального окна по центру */
+  }
+}
+/* свойства для блока, содержащего контент модального окна */
+.modal-content {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 2px solid rgba(47, 103, 205);
+  border-radius: 40px;
+  outline: 0;
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .modal-content {
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+}
+/* свойства для заголовка модального окна */
+.modal-header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 1px solid #eceeef;
+}
+.modal-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.5;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+/* свойства для кнопки "Закрыть" */
+.close {
+  float: right;
+  font-family: sans-serif;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-shadow: 0 1px 0 #fff;
+  opacity: 0.9;
+  text-decoration: none;
+  position: absolute;
+  right: -20px;
+  top: -20px;
+}
+/* свойства для кнопки "Закрыть" при нахождении её в фокусе или наведении */
+.close:focus,
+.close:hover {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.75;
+}
+/* свойства для блока, содержащего основное содержимое окна */
+.modal-body {
+  position: relative;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 15px;
+  overflow: auto;
+  border: 2px solid rgb(44, 97, 190);
+  border-radius: 30px;
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal__title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #2d2d2d;
+  font-family: 'ALS Schlangesans';
+  font-size: 41px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.modal__form input[type='text'] {
+  width: 300px;
+  height: 35px;
+  margin-right: 15px;
+  background-color: rgb(226, 239, 254);
+  border: 1px solid #2f629d;
+  border-radius: 30px;
+  color: #2d2d2d;
+  font-family: 'ALS Schlangesans';
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.modal__form input[type='submit'] {
+  width: 295px;
+  height: 49px;
+  background-image: url(../img/check-list_btn.png);
+  border: 0;
+  border-radius: 25px;
+  color: #000000;
+  font-family: 'ALS Schlangesans - Black';
+  font-size: 24px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.modal__form .checkbox__text {
+  color: #000;
+  font-size: 10px;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+.modal__form .checkbox__text:before {
+  border: 2px solid #000;
+  width: 23px;
+  height: 25px;
+  top: 2px;
+  left: -1px;
+}
+
+.modal__form .checkbox input:checked + .checkbox__text:after {
+  background-image: url(../img/checkbox-2.png);
+  height: 40px;
+}
+
+.overlay {
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
+  height: 720px;
+  width: 100%;
+}
+
+.fullscreen-bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.overlay .container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+  padding-top: 94px;
+}
+.video__bg-black {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #000;
+  bottom: 0;
+  opacity: 0.5;
+}
+
+.price__subtitle--mobile {
+  display: none;
+}
+
+.mobile-footer {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .fullscreen-bg__video {
+    display: none;
+  }
+}
+
+@media (max-width: 1070px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  .container {
+    max-width: 340px;
+  }
+  img,
+  iframe {
+    max-width: 100%;
+  }
+  .page-header {
+    display: none;
+  }
+  .mobile-header {
+    display: block;
+    background-image: url(../img/mobile-header.png);
+    width: 100%;
+    height: 55px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .mobile-header .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .mobile-header__logo img {
+    width: 85px;
+    padding-top: 5px;
+  }
+  .mobile-header__contacts-phone a {
+    color: #fcd53d;
+    font-family: 'ALS Schlangesans - Black';
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: none;
+  }
+  .mobile-header__contacts-city {
+    color: #ffffff;
+    font-family: 'ALS Schlangesans';
+    font-size: 10px;
+    font-weight: 700;
+  }
+  .mobile-header__desc {
+    color: #ffffff;
+    font-family: 'ALS Schlangesans';
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .mobile-header__contacts {
+    text-align: center;
+    padding-top: 6px;
+    line-height: 13px;
+    margin-left: -40px;
+  }
+  .mobile-header__menu {
+    padding-top: 9px;
+  }
+  .offer {
+    background-image: url(../img/mobile_bg.jpg);
+    height: auto;
+    margin-top: 10px;
+  }
+  .video__bg-black {
+    display: none;
+  }
+  .overlay {
+    height: 480px;
+  }
+  .overlay .container {
+    padding-top: 60px;
+  }
+  .offer__top {
+    background-image: url(../img/mobile-offer-top_bg.png);
+    background-size: contain;
+    padding-top: 0;
+    width: 333px;
+    height: 198px;
+  }
+  .offer__title {
+    font-size: 30px;
+    line-height: 27.64px;
+    padding-top: 18px;
+  }
+  .offer__top p {
+    font-size: 15px;
+    max-width: 240px;
+    padding-left: 0;
+    margin: 0 auto;
+    padding-top: 10px;
+    line-height: 17px;
+  }
+  .offer__top p br {
+    display: none;
+  }
+  .offer__bottom {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 0;
+  }
+  .offer__features {
+    column-count: 1;
+    margin-top: 23px;
+    margin-left: 15px;
+  }
+  .offer__features li {
+    font-size: 17px;
+    margin-bottom: 3px;
+  }
+  .offer__free-calc {
+    width: 319px;
+    height: 33px;
+    margin-top: 15px;
+    font-size: 21px;
+  }
+  .specialization {
+    padding-bottom: 23px;
+  }
+  .specialization__img {
+    display: none;
+  }
+  .specialization__text {
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .specialization__title {
+    max-width: 290px;
+    font-size: 27px;
+  }
+  .specialization__desc {
+    font-size: 17px;
+    margin-left: 7px;
+    margin-top: 17px;
+    padding-left: 14px;
+  }
+  .calculation {
+    height: auto;
+    padding-top: 18px;
+    padding-bottom: 36px;
+  }
+  .calculation__title {
+    color: #fcd53d;
+    font-size: 26px;
+    font-weight: 400;
+  }
+  .calculation__body {
+    flex-direction: column;
+    margin-top: 15px;
+  }
+  .calculation__range {
+    background-image: url(../img/mobile-range.png);
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    justify-content: normal;
+    height: 120px;
+    margin-left: 6px;
+  }
+  .calculation__range-title {
+    font-size: 14px;
+    margin-top: 16px;
+    margin-bottom: 5px;
+    text-align: left;
+    margin-left: -30px;
+  }
+  .calculation__range-subtitle {
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 5px;
+    margin-left: 20px;
+  }
+  .calculation__range-result {
+    width: 120px;
+    height: 20px;
+    font-size: 16px;
+  }
+  .calculation__result {
+    display: none;
+  }
+  .calculation__button {
+    display: block;
+    width: 213px;
+    height: 32px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 24px;
+  }
+  .price {
+    padding-top: 20px;
+    padding-bottom: 9px;
+  }
+  .price__subtitle--mobile {
+    display: block;
+    color: #222222;
+    font-family: 'ALS Schlangesans - Black';
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: 25px;
+    text-align: center;
+  }
+  .price__title {
+    font-size: 32px;
+  }
+  .price__options {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .price__options-title {
+    background-image: url(../img/mobile-price.png);
+    width: 92%;
+    font-size: 33px;
+    color: #000;
+  }
+  .price__options-subtitle {
+    display: none;
+  }
+  .price__options-left {
+    padding-right: 0;
+    border: 0;
+  }
+  .price__options-left + .price__subtitle--mobile {
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
+  .price__options-right {
+    padding-left: 0;
+    margin-top: -20px;
+  }
+  .price__options-right p {
+    text-align: center;
+    margin-top: 0;
+  }
+  .price__options-title {
+    width: 100%;
+  }
+  .price__options-list {
+    display: none;
+  }
+  .order {
+    background-image: url(../img/mobile-order.jpg);
+    padding-top: 37px;
+    padding-bottom: 30px;
+  }
+  .order__title {
+    font-size: 31px;
+  }
+  .order__text {
+    font-size: 17px;
+    max-width: 100%;
+    margin-left: 3px;
+    padding-left: 15px;
+  }
+  .order__body {
+    flex-direction: column;
+  }
+  .order__form {
+    margin-top: 50px;
+  }
+  .order__form form {
+    margin-right: 0;
+  }
+  .order__form input {
+    width: 278px;
+    height: 30px;
+    font-size: 18px;
+  }
+  .order__form button {
+    width: 238px;
+    height: 32px;
+    font-size: 22px;
+    margin-top: 30px;
+  }
+  .check-list {
+    padding-top: 35px;
+  }
+  .check-list__title {
+    color: #000000;
+    font-family: 'ALS Schlangesans - Black';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    max-width: 225px;
+    margin-left: auto;
+  }
+  .check-list__img {
+    position: absolute;
+    top: 0;
+    width: 96px;
+    margin-left: 5px;
+  }
+  .check-list__text {
+    margin-left: -35px;
+  }
+  .check-list__text p {
+    color: #064880;
+    font-family: 'ALS Schlangesans - Black';
+    font-size: 21px;
+    font-weight: 400;
+    margin-left: 40px;
+    margin-bottom: 9px;
+  }
+  .check-list__item {
+    color: #000000;
+    font-family: 'ALS Schlangesans';
+    font-size: 13px;
+    font-weight: 700;
+    padding-left: 10px;
+    margin-bottom: 10px;
+  }
+  .check-list__list {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  .check-list__form {
+    margin-top: 0px;
+    padding-bottom: 10px;
+  }
+  .check-list__form form {
+    text-align: center;
+  }
+  .check-list__form input[type='text'] {
+    width: 268px;
+    height: 30px;
+    margin-bottom: 15px;
+    margin-right: 0;
+    font-size: 18px;
+  }
+  .check-list__form input[type='submit'] {
+    width: 228px;
+    height: 28px;
+    font-size: 18px;
+  }
+  .check-list__form .checkbox__text {
+    font-size: 11px;
+    margin-top: 10px;
+    margin-left: 0;
+    padding-left: 0;
+    padding-right: 30px;
+    text-align: left;
+    line-height: 15px;
+  }
+  .check-list__form .checkbox__text:before {
+    right: -1px;
+    left: auto;
+  }
+  .check-list__form .checkbox input:checked + .checkbox__text:after {
+    right: -8px;
+    left: auto;
+  }
+   .check-list:after {
+    display: none;
+  }
+  .video {
+    padding-top: 15px;
+    padding-bottom: 35px;
+  }
+  .video__title {
+    font-size: 19px;
+  }
+  iframe.video__img {
+    height: 166px;
+    width: 294px;
+    margin-top: 10px;
+  }
+  .video__desc {
+    font-size: 19px;
+    margin-left: 7px;
+    margin-top: 10px;
+  }
+  .video ol {
+    margin-left: 20px;
+    margin-top: 15px;
+  }
+  .video li {
+    font-size: 14px;
+    padding-left: 5px;
+    line-height: 16px;
+    margin-bottom: 5px;
+  }
+  .video:after {
+    display: none;
+  }
+  .portfolio__title {
+    font-size: 26px;
+    margin-top: -30px;
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .portfolio__desc {
+    font-size: 21px;
+    margin-top: 0px;
+  }
+  .portfolio__photos a {
+    width: auto;
+    height: 65px;
+    padding-bottom: 5px;
+}
+.portfolio__photos img {
+    width: auto;
+    height: 65px;
+}
+  .slick-prev:before,
+  .slick-next:before {
+    color: black !important;
+  }
+  .contacts {
+    background-image: url(../img/mobile-footer.png);
+    background-size: contain;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+  .contacts .container {
+    flex-direction: column;
+  }
+  .contacts__logo {
+    text-align: center;
+  }
+  .contacts__logo img {
+    width: 161px;
+  }
+  .contacts__content {
+    margin-left: 0px;
+  }
+  .contacts__content-title {
+    font-size: 37px;
+  }
+  .contacts__content-title:nth-child(1) {
+    margin-left: 20px;
+  }
+  .contacts__phone {
+    font-size: 24px;
+    margin-top: 15px;
+    padding-left: 20px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+  }
+  .contacts__phone + .contacts__content-title {
+    font-size: 32px;
+    text-align: center;
+    padding-top: 10px;
+  }
+  .contacts__content-subtitle {
+    font-size: 15px;
+  }
+  .contacts__content form {
+    margin-top: 10px;
+  }
+  .contacts__content input[type='text'] {
+    width: 277px;
+    height: 36px;
+    font-size: 18px;
+    margin-right: 0;
+  }
+  .contacts__content input[type='submit'] {
+    width: 232px;
+    height: 36px;
+    font-size: 20px;
+  }
+  .footer__top {
+    font-size: 14px;
+  }
+  .footer__bottom {
+    font-size: 12px;
+  }
+  .jq-selectbox__select {
+    width: 90% !important;
+    height: 32px !important;
+    box-sizing: border-box !important;
+    margin: 0 auto;
+    margin-bottom: 17px !important;
+    border: 3px solid rgb(248, 217, 86) !important;
+    font-size: 14px !important;
+    height: 32px !important;
+    line-height: 7px !important;
+  }
+  .jq-selectbox__select-text {
+    font-size: 14px !important;
+    height: 32px !important;
+    line-height: 7px !important;
+  }
+  .jq-selectbox__select-text.placeholder {
+    font-size: 14px !important;
+    height: 32px !important;
+    line-height: 7px !important;
+  }
+  .jq-selectbox__trigger-arrow {
+    width: 10px !important;
+    height: 14px !important;
+    background-size: contain !important;
+    top: 7px !important;
+    right: 5px !important;
+  }
+  .jq-selectbox__dropdown {
+    background: #6a6a6a !important;
+    top: 5px !important;
+    padding-top: 25px !important;
+    width: 305px !important;
+    z-index: -1 !important;
+    border-radius: 15px !important;
+    border: 2px solid #fff !important;
+    margin-left: 17px !important;
+    height: fit-content !important;
+  }
+  .jq-selectbox__dropdown li {
+    border-bottom: 1px solid #fff;
+    color: #fff !important;
+    font-family: 'ALS Schlangesans';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.52px;
+  }
+  .calculation__range {
+    width: 347px;
+  }
+  input[type='range'] {
+    width: 279px;
+    margin-right: 25px;
+  }
+  .modal__title {
+    font-size: 31px;
+  }
+  .modal__form input[type='text'] {
+    width: 230px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+  }
+  .modal__form input[type='submit'] {
+    width: 230px;
+    height: 40px;
+    font-size: 20px;
+  }
+  .modal__form .checkbox input:checked + .checkbox__text:after {
+    right: auto;
+    left: -8px;
+  }
+  .modal-dialog {
+    top: 40px;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Специальные правила для браузеров на движках WebKit/Blink */
+  input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: 5px solid #ffb400;
+    height: 20px;
+    width: 19px;
+    border-radius: 50%;
+    background: #bb8401;
+    cursor: pointer;
+    margin-top: -7px; /* Вам нужно указать значение для поля в Chrome, но в Firefox и IE это происходит автоматически */
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; /* Добавляем классные эффекты для слайдера! */
+  }
+
+  /* Тоже самое для Firefox */
+  input[type='range']::-moz-range-thumb {
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    border: 1px solid #000000;
+    height: 36px;
+    width: 16px;
+    border-radius: 3px;
+    background: #ffffff;
+    cursor: pointer;
+  }
+
+  /* Тоже самое для IE */
+  input[type='range']::-ms-thumb {
+    border: 1px solid #ffb400;
+    height: 10px;
+    width: 16px;
+    border-radius: 20px;
+    background: #ffffff;
+    cursor: pointer;
+  }
+
+  input[type='range']::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    background: rgb(35, 49, 47);
+    border-radius: 20px;
+    border: 1px solid #ffb400;
+  }
+
+  input[type='range']:focus::-webkit-slider-runnable-track {
+    background: rgb(35, 49, 47);
+  }
+
+  input[type='range']::-moz-range-track {
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    background: rgb(35, 49, 47);
+    border-radius: 20px;
+    border: 1px solid #ffb400;
+  }
+
+  input[type='range']::-ms-track {
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    border-width: 16px 0;
+    color: transparent;
+  }
+  input[type='range']::-ms-fill-lower {
+    background: rgb(35, 49, 47);
+    border: 1px solid #ffb400;
+    border-radius: 20px;
+  }
+  input[type='range']:focus::-ms-fill-lower {
+    background: rgb(35, 49, 47);
+  }
+  input[type='range']::-ms-fill-upper {
+    background: rgb(35, 49, 47);
+    border: 1px solid #ffb400;
+    border-radius: 20px;
+  }
+  input[type='range']:focus::-ms-fill-upper {
+    background: rgb(35, 49, 47);
+  }
+
+  .mobile-footer {
+    display: block;
+    background-image: url(../img/mobile-fixfooter.png);
+    width: 100%;
+        height: 60px;
+    position: fixed;
+    bottom: 0;
+    z-index: 20;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .mobile-footer .container {
+    display: flex;
+    align-items: center;
+  }
+  .mobile-footer div {
+    border-right: 1px solid #fff;
+    padding-right: 15px;
+    margin-left: 10px;
+    padding-top: 6px;
+  }
+  .mobile-footer a {
+    display: flex;
+    color: #ffffff;
+    font-family: 'ALS Schlangesans';
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration: none;
+    line-height: 12px;
+  }
+  .mobile-footer div:last-child {
+    border: 0;
+  }
+  .mobile-footer div img {
+    padding-right: 10px;
+    width: 35px;
+    height: 37px;
+    padding-top: 1px;
+  }
+  .footer__bottom {
+    padding-bottom: 70px;
+  }
+  
+  .price__options-subtitle--active {
+    display: block;
+    margin-top: 10px;
+    margin-top: 15px;
+}
+.price__options-subtitle {
+                margin-top: 10px;
+}
+.price__options-list--active {
+    display: flex;
+}
+.options-item__title {
+    font-size: 18px;
+}
+.options-item__desc {
+    font-size: 12px;
+}
+.options-item__list {
+    font-size: 14px;
+        height: 130px;
+}
+.price__options-item {
+    width: 50%;
+}
+.price__options-list {
+    margin-bottom: 20px;
+        margin-left: -10px;
+}
+.options-item__btn {
+    width: 150px;
+    height: 28px;
+    font-size: 18px;
+        margin-left: auto;
+    margin-right: auto;
+}
+.options__line {
+    margin-left: 15px;
+}
+.options-item__price {
+    margin-top: 10px;
+    width: 150px;
+    background-size: contain;
+    font-size: 22px;
+    height: 45px;
+}
+.close-mobile {
+        margin-top: 20px;
+}
+.close-mobile--active {
+    display: block !important;
+}
+.step-3 input[type='submit'] {
+    display: block;
+    width: 253px;
+    height: 44px;
+    background-color: #ffdb4d;
+    background-image: none;
+    border: 0;
+    border-radius: 20px;
+    color: #000000;
+    font-family: 'ALS Schlangesans - Black';
+    font-size: 24px;
+    font-weight: 400;
+    box-shadow: inset 0 4px 5px 2px rgba(0, 0, 0, 0.5), inset 0 0 6px 1px rgba(245, 201, 30, 0.35);
+    cursor: pointer;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.step-3 input[type='text'] {
+    width: 287px;
+    height: 43px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 30px;
+    border: 2px solid #ff8400;
+    color: #2d2d2d;
+    font-family: 'ALS Schlangesans';
+    font-size: 18px;
+    font-weight: 700;
+}
+.step-3 .checkbox__text {
+    margin-top: 30px;
+    font-size: 12px;
+}
+.step-3 p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+.step-3 .calculation__subtitle {
+    margin-top: 10px;
+    font-size: 26px;
+}
+.contacts__phone a {
+    color: #000;
+    text-decoration: none;
+}
+.step-2__loading {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+}

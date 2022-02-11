@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.active {
+    display: block !important;
+}
+
+@import 'blocks/subheader';
+@import 'blocks/advantages';
+@import 'blocks/video';
+@import 'blocks/characteristic';
+@import 'blocks/box';
+@import 'blocks/slider';
+@import 'blocks/earnings';
+@import 'blocks/bonus';
+@import 'blocks/purchase';
+@import 'blocks/free';
+@import 'blocks/footer';
+@import 'blocks/descr';
+@import 'blocks/callback';
+@import 'blocks/callback-photo';
+@import 'blocks/callback-contact';
+@import 'blocks/free-form';
+@import 'blocks/thank';

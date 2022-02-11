@@ -1,0 +1,40 @@
+.descr {
+  padding: 23px 0px 7px 0px;
+  &__text {
+    font-family: 'Fira Sans';
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+  }
+  &__text-mark {
+    font-family: 'FiraSans-SemiBold';
+    font-size: 53px;
+    line-height: 26.98px;
+    padding-bottom: 17px;
+    display: block;
+  }
+  &__text-black {
+    font-family: 'Fira Sans';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 33.58px;
+  }
+  &__text-black-big {
+    font-size: 28px;
+    font-family: 'FiraSans-SemiBold';
+    font-size: 28px;
+    line-height: 26.98px;
+  }
+  &__text-small {
+    font-family: 'Fira Sans';
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 26.98px;
+  }
+  &__text-small-black {
+    font-family: 'Fira Sans';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26.98px;
+  }
+}

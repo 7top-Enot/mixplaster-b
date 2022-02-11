@@ -1,0 +1,108 @@
+.advantages {
+    padding: 91px 58px 154px 77px;
+    background-image: url(../img/advantages-bg.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: -213px;
+    z-index: 3;
+    position: relative;
+    height: 529px;
+    &__wrap {
+        display: flex;
+    }
+    &__item:not(:last-child) {
+        position: relative;
+        &:after {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            background-image: url(../img/advantages-line.png);
+            background-repeat: no-repeat;
+            width: 2px;
+            height: 219px;
+            opacity: 1;
+            top: 33px;
+            right: -50px;
+        }
+    }
+    &__item_1 {
+        width: 290px;
+        margin-right: 72px;
+    }
+    &__item_2 {
+        margin-top: 58px;
+        margin-right: 88px;
+        width: 246px;
+    }
+    &__item_3 {
+        margin-top: 138px;
+        margin-right: 74px;
+        width: 406px;
+    }
+    &__item_4 {
+        margin-top: 55px;
+        margin-right: 80px;
+        width: 330px;
+    }
+    &__item_5 {
+        width: 202px;
+    }
+    &__title {
+        color: #313c52;
+        font-family: 'Akrobat-ExtraBold';
+        font-size: 36px;
+        font-weight: 400;
+        letter-spacing: normal;
+        line-height: 42.1px;
+    }
+    &__descr {
+        color: #000000;
+        font-family: 'Akrobat-SemiBold';
+        font-size: 23px;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 26.25px;
+        margin-top: 17px;
+        &:before {
+            content: '';
+            display: block;
+            width: 13px;
+            height: 105px;
+            border-radius: 10px;
+            background-color: #fd2217;
+            margin-right: 18px;
+            float: left;
+        }
+    }
+}
+
+@media (max-width: 1919px) {
+    .advantages {
+        margin-top: -100px;
+        padding-top: 50px;
+        height: 440px;
+        background: #fff;
+        &__wrap {
+            flex-wrap: wrap;
+        }
+        &__item {
+            width: 31%!important;
+            margin-top: 0;
+            margin-bottom: 40px;
+            margin-right: 20px;
+        }
+        &__item:not(:last-child):after {
+            display: none;
+        }
+        &__title {
+            font-size: 30px;
+        }
+        &__descr {
+            font-size: 20px;
+        }
+        &__descr:before {
+            width: 8px;
+            height: 90px;
+        }
+    }
+}

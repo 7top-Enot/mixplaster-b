@@ -1,0 +1,68 @@
+.thank {
+  padding-top: 70px;
+
+  &__title {
+    color: #313131;
+    font-family: 'Fira Sans';
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 36.63px;
+    padding-left: 6px;
+    border-left: 1px solid #da271e;
+
+    span {
+      display: block;
+      color: #313131;
+      font-family: 'Fira Sans';
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 25.4px;
+    }
+  }
+
+  &__title_bonus {
+    font-size: 28px;
+    line-height: 30px;
+
+    span {
+        margin-top: 10px;
+        font-size: 13px;
+        line-height: 18px;
+    }
+  }
+
+  &__descr {
+    color: #313131;
+    font-family: 'Fira Sans';
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 41px;
+    text-align: center;
+  }
+
+  &-video__image {
+    margin-top: 38px;
+    width: 320px;
+    height: 179px;
+  }
+
+  a {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 303px;
+    height: 46px;
+    margin-top: 38px;
+    border: 2px solid black;
+    color: #313131;
+    font-family: 'Fira Sans';
+    font-size: 27px;
+    font-weight: 500;
+    text-decoration: none;
+
+    img {
+      margin-right: 13px;
+    }
+  }
+}

@@ -1,0 +1,217 @@
+.blam2 {
+    background: url(https://mixplaster.com/images/bg0.png);
+    background-repeat: no-repeat;
+    width: 433px;
+    height: 710px;
+    position: absolute;
+    top: 0;
+    left: 1260px;
+}
+
+.zazu {
+    padding: 0px 25px;
+}
+
+.bb1 {
+    font-family: 'Akrobat-ExtraBold' !important;
+    font-size: 30px;
+    padding-top: 31px;
+    padding-bottom: 15px;
+    text-align: center;
+    font-weight: 700 !important;
+}
+
+span.zxbg {
+    background: #ffb400;
+    text-transform: uppercase;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 1px;
+    font-weight: 800 !important;
+}
+
+ul.zoin {
+    padding-left: 27px !important;
+}
+
+ul.zoin li {
+    font-size: 16px;
+    line-height: 24px;
+    list-style: disc;
+    font-family: 'Akrobat' !important;
+}
+
+span.zxbg2 {
+    background: #ffb400;
+}
+
+.blam2 span {
+    font-weight: 700 !important;
+}
+
+.bb2 {
+    font-size: 26px;
+    color: #fff;
+    padding-top: 33px;
+    text-align: center;
+    font-family: 'Akrobat-ExtraBold' !important;
+}
+
+.custom {
+    display: contents;
+}
+
+.modal-scrollable.ba-forms-modal {
+    bottom: 0;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    left: 0;
+    overflow-y: scroll;
+    margin-right: -17px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.78) !important;
+}
+
+.com-baforms form {
+    margin: 0 0 18px;
+}
+
+.sppb-addon-content {
+    font-family: 'Akrobat' !important;
+}
+
+.ba-form {
+    background-color: transparent !important;
+    border: none !important;
+    padding: 0px 26px;
+}
+
+.com-baforms .ba-form {
+    margin: 0 auto;
+    transition: height .3s linear;
+    -webkit-transition: height .3s linear;
+}
+.ba-form {
+    box-sizing: border-box;
+    padding: 20px;
+    padding-top: 5px;
+}
+
+.com-baforms .ba-form > div, .popup-form .ba-form > div {
+    animation: forms-modal .3s .4s linear both;
+    -webkit-animation: forms-modal .3s .4s linear both;
+}
+.com-baforms .ba-form > div:first-child div {
+    line-height: normal;
+}
+
+.ba-form .ba-row {
+    position: inherit;
+}
+
+.span12 {
+    margin: 0 auto !important;
+    text-align: center !important;
+}
+
+.ba-form .row-fluid:before, .row-fluid:after {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+
+.ba-form .row-fluid:after {
+    clear: both;
+}
+
+.ba-form .tool {
+    margin: 22px 0px !important;
+}
+
+.ba-form .row-fluid [class*="span"] >.tool:first-child {
+    margin-top: 0;
+}
+.com-baforms .ba-form > div:first-child div {
+    line-height: normal;
+}
+.ba-form .tool {
+    margin: 20px 0px;
+    text-align: left;
+}
+
+.ba-form div:not(.ba-checkMultiple):not(.ba-radioMultiple ) > label {
+    margin-bottom: 15px;
+}
+
+.ba-form div:not(.ba-checkMultiple):not(.ba-radioMultiple ) > label {
+    margin-bottom: 5px !important;
+    font-size: 17px !important;
+}
+.ba-form label {
+    display: block;
+    line-height: initial;
+}
+
+.ba-form label span {
+    color: #fff !important;
+    font-size: 18px !important;
+}
+
+.ba-form label span {
+    color: inherit;
+    font: inherit;
+    position: relative;
+}
+.ba-form label span {
+    font-family: 'Akrobat' !important;
+}
+.ba-form span {
+    display: initial !important;
+}
+.sppb-addon-content span {
+    font-weight: 700 !important;
+}
+
+.blam2 input[type="text"] {
+    height: 40px !important;
+}
+.ba-form input[type="number"], .ba-form input[type="email"], .ba-form input[type="text"], .ba-form select, .ba-form select[size], .ba-form textarea {
+    box-shadow: none;
+    box-sizing: border-box;
+    font-family: inherit;
+    line-height: normal !important;
+    padding-left: 20px;
+    width: 100%;
+    margin-bottom: 0px;
+}
+.ba-form input[type="number"], .ba-form input[type="email"], .ba-form input[type="text"], .ba-form select, .ba-form select[size], .ba-form textarea {
+    color: #000 !important;
+    font-size: 18px !important;
+}
+
+.ba-form .ba-row {
+    position: inherit;
+}
+
+input.ba-btn-submit {
+    background: url(https://mixplaster.com/images/arrw.png);
+    background-position: top left;
+    background-repeat: no-repeat;
+    padding-left: 50px;
+    margin-top: 10px;
+    font-size: 18px !important;
+}
+
+input.ba-btn-submit {
+    font-family: 'Akrobat-ExtraBold' !important;
+}
+
+@media(max-width: 1919px) {
+    .blam2 {
+        display: none;
+    }
+}
+

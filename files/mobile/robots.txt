@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /sass/
+Disallow: /cgi-bin
+Disallow: /test/
+Sitemap: https://mixplaster.com/mobile/sitemap.xml

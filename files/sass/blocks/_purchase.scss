@@ -1,0 +1,195 @@
+.purchase {
+  background-image: url(../img/purchase-bg.webp);
+  background-repeat: no-repeat;
+  padding: 50px 0 271px 0;
+  position: relative;
+  &__wrap {
+    width: 974px;
+    margin-left: 114px;
+  }
+  &__title {
+    color: #ffffff;
+    font-family: 'Fira Sans';
+    font-size: 58px;
+    font-weight: 700;
+  }
+  &__descr {
+    margin-top: 18px;
+    color: #ffffff;
+    font-family: 'Fira Sans';
+    font-size: 21px;
+    font-weight: 400;
+    span::after {
+      content: '';
+      display: inline-block;
+      background-image: url(../icons/purchase-arrow.png);
+      background-repeat: no-repeat;
+      width: 17px;
+      height: 14px;
+      margin-left: 10px;
+      margin-right: 5px;
+    }
+  }
+  &__caption {
+    color: #ffffff;
+    font-family: 'Fira Sans';
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: 21px;
+    margin-left: 21px;
+    display: flex;
+    &:before {
+      content: '';
+      display: inline-block;
+      width: 2px;
+      height: 45px;
+      background-color: #fd2217;
+      margin-right: 23px;
+    }
+  }
+  &__image {
+    margin-top: 39px;
+    margin-left: 20px;
+    width: 770px;
+    height: 436px;
+    cursor: pointer;
+  }
+  &__wrapper {
+    position: absolute;
+    background-image: url(../img/purchase-wrapper.webp);
+    background-repeat: no-repeat;
+    width: 401px;
+    height: 213px;
+    padding: 23px 0 16px 0;
+    top: 66px;
+    right: 186px;
+  }
+  &__wrapper-title {
+    color: #ffffff;
+    font-family: 'Fira Sans';
+    font-size: 30px;
+    font-weight: 500;
+    display: flex;
+    width: 317px;
+    margin-left: 50px;
+    &:before {
+      content: '';
+      display: inline-block;
+      width: 3px;
+      height: 70px;
+      background-color: #fd2217;
+      margin-right: 20px;
+    }
+  }
+  &__wrapper-descr {
+    width: 341px;
+    color: #ffffff;
+    font-family: 'FiraSans-Book';
+    font-size: 23px;
+    margin-top: 14px;
+    margin-left: 44px;
+  }
+  &__wrapper-name {
+    color: #ffffff;
+    font-family: 'Fira Sans';
+    font-size: 23px;
+    font-weight: 500;
+    width: 118px;
+    margin-top: 12px;
+    margin-left: 245px;
+  }
+  &__delivery {
+    position: absolute;
+    background-image: url(../img/purchase-delivery.png);
+    background-repeat: no-repeat;
+    width: 1920px;
+    height: 334px;
+    bottom: 8px;
+    left: 0;
+  }
+  &__delivery-title {
+    color: #ffb400;
+    font-family: 'Fira Sans';
+    font-size: 35px;
+    font-weight: 500;
+    padding-top: 144px;
+    margin-left: 174px;
+  }
+  &__form {
+    display: flex;
+    margin-left: 205px;
+    margin-top: 20px;
+  }
+  &__form-city {
+    background: transparent;
+    background-image: url(../img/form-city.png);
+    background-repeat: no-repeat;
+    border: none;
+    outline: 0;
+    width: 286px;
+    height: 43px;
+    padding: 0 17px 0 59px;
+    color: #ffffff;
+    font-family: 'Fira Sans';
+    font-size: 17px;
+    font-style: italic;
+    margin-right: 45px;
+    outline: 0;
+    &::-webkit-input-placeholder {
+      color: #ffffff;
+    }
+  }
+  &__form-phone {
+    background: transparent;
+    background-image: url(../img/form-phone.png);
+    background-repeat: no-repeat;
+    border: none;
+    outline: 0;
+    width: 286px;
+    height: 43px;
+    color: #ffffff;
+    font-family: 'Fira Sans';
+    font-size: 17px;
+    font-style: italic;
+    padding: 0 16px 0 57px;
+    outline: 0;
+    &::-webkit-input-placeholder {
+      color: #ffffff;
+    }
+  }
+  &__form-btn {
+    background-color: #ffb500;
+    border: none;
+    border-radius: 30px;
+    width: 320px;
+    height: 39px;
+    color: #000000;
+    font-family: 'Fira Sans';
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 344px;
+    outline: 0;
+    cursor: pointer;
+    &:hover {
+      background-color: #ff8a00;
+    }
+  }
+  &__delivery-descr {
+    color: #ffffff;
+    font-family: 'FiraSans-UltraLight';
+    font-size: 12px;
+    width: 293px;
+    margin-left: 761px;
+    margin-top: -15px;
+  }
+}
+
+@media (max-width: 1919px) {
+  .purchase {
+    &__wrapper {
+      display: none;
+    }
+  }
+}

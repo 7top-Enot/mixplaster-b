@@ -1,0 +1,112 @@
+.footer {
+  padding: 40px 0 29px 0;
+
+  &__logo {
+    display: block;
+    margin: 0 auto;
+    width: 165px;
+    height: 94px;
+    img {
+      width: 100%;
+    }
+  }
+  &__address {
+    color: #141414;
+    font-family: 'Fira Sans';
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 auto;
+    margin-top: 25px;
+    width: 274px;
+  }
+  &__sales-department {
+    color: #141414;
+    font-family: 'Fira Sans';
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 19px;
+    width: 169px;
+    margin-left: 33px;
+  }
+  &__contacts {
+    width: 173px;
+    margin-left: 35px;
+    margin-top: 3px;
+    color: #141414;
+    font-family: 'FiraSans-SemiBold';
+    font-size: 21px;
+    line-height: 21px;
+    a {
+      display: block;
+      margin-top: 5px;
+      text-decoration: none;
+      color: #141414;
+    }
+  }
+  &__mail {
+    margin-left: 34px;
+    margin-top: 13px;
+    a {
+      display: block;
+      text-decoration: none;
+      color: #141414;
+      font-family: 'Fira Sans';
+      font-size: 14px;
+      font-weight: 400;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  &__social {
+    color: #141414;
+    font-family: 'Fira Sans';
+    font-size: 17px;
+    font-weight: 500;
+    margin-top: 17px;
+    margin-left: 35px;
+    display: flex;
+    align-items: center;
+  }
+  &__social-insta {
+    text-decoration: none;
+    width: 31px;
+    height: 31px;
+    background-image: url(../icons/footer-insta.png);
+    background-repeat: no-repeat;
+    margin-left: 16px;
+    margin-right: 12px;
+  }
+  &__social-vk {
+    text-decoration: none;
+    width: 31px;
+    height: 31px;
+    background-image: url(../icons/footer-vk.png);
+    background-repeat: no-repeat;
+  }
+  &__descr {
+    color: #141414;
+    font-family: 'FiraSans-Heavy';
+    font-size: 18px;
+    width: 100%;
+    margin-top: 22px;
+  }
+  &__btn {
+    display: block;
+    outline: none;
+    border: none;
+    color: #ffffff;
+    font-family: 'Akrobat-ExtraBold';
+    font-size: 29px;
+    border-radius: 5px;
+    width: 245px;
+    height: 45px;
+    background-color: #fd0000;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding-bottom: 6px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

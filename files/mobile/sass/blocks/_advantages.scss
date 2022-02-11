@@ -1,0 +1,31 @@
+.advantages {
+  padding-bottom: 14px;
+  &__title {
+    color: #313c52;
+    font-family: 'Akrobat-ExtraBold';
+    font-size: 36px;
+    margin-top: 22px;
+    letter-spacing: -0.3px;
+  }
+  &__descr {
+    color: #000000;
+    font-family: 'Akrobat-SemiBold';
+    font-size: 22px;
+    line-height: 25.9px;
+    padding-left: 34px;
+    position: relative;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    &:before {
+      content: '';
+      display: inline-block;
+      width: 13px;
+      height: 105px;
+      background-color: #da271e;
+      border-radius: 15px;
+      position: absolute;
+      left: 0;
+      top: -3px;
+    }
+  }
+}

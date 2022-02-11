@@ -1,0 +1,62 @@
+{
+    "name": "Mixplaster",
+    "lang": "ru",
+    "icons": [
+      {
+         "src": "icons/icon.png",
+         "sizes": "512x512",
+         "type": "image/png"
+      }
+    ],
+    "start_url": "https://mixplaster.com/mobile/index.html",
+    "scope": "https://mixplaster.com/mobile",
+    "yandex": {
+      "manifest_version": 1,
+      "app_version": "1.0.3",
+      "cache": {
+        "resources": [
+          "/mobile/css/style.min.css",
+          "/mobile/fonts/ALSSchlangesans-Bold.woff",
+          "/mobile/fonts/Akrobat-Regular.woff",
+          "/mobile/fonts/Akrobat-SemiBold.woff",
+          "/mobile/fonts/FiraSans-ExtraBold.woff",
+          "/mobile/img/bonus-bg.webp",
+          "/mobile/img/bonus-btn.png",
+          "/mobile/img/delivery-bg.webp",
+          "/mobile/img/delivery-city.png",
+          "/mobile/img/delivery-phone.png",
+          "/mobile/img/fixed-footer.png",
+          "/mobile/img/footer-logo.webp",
+          "/mobile/img/header-logo.png",
+          "/mobile/img/important-bg.webp",
+          "/mobile/img/next.png",
+          "/mobile/img/prev.png",
+          "/mobile/img/price-bg.png",
+          "/mobile/img/price-form.png",
+          "/mobile/img/purchase-image.webp",
+          "/mobile/img/slider-2.webp",
+          "/mobile/img/slider-3.webp",
+          "/mobile/img/slider-4.webp",
+          "/mobile/img/slider-5.webp",
+          "/mobile/img/slider-6.webp",
+          "/mobile/img/slider-7.webp",
+          "/mobile/img/slider-8.webp",
+          "/mobile/img/slider-after.png",
+          "/mobile/img/slider-before.png",
+          "/mobile/img/slider-image.webp",
+          "/mobile/img/subheader-bg.webp",
+          "/mobile/img/telegram.png",
+          "/mobile/img/viber.png",
+          "/mobile/img/video-bg.webp",
+          "/mobile/img/video-image-1.webp",
+          "/mobile/img/video-image-2.webp",
+          "/mobile/img/video-image-3.webp",
+          "/mobile/img/video-image-4.webp",
+          "/mobile/img/video-image-5.webp",
+          "/mobile/img/whatsapp.png",
+          "/mobile/img/youtube-bg.webp",
+          "/mobile/img/youtube-link.png"
+        ]
+      }
+    }
+  }

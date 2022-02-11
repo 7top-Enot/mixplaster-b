@@ -1,0 +1,33 @@
+.box {
+    padding: 0px 0 87px 0;
+    &__text {
+        width: 1307px;
+        color: #292929;
+        font-family: 'FiraSans-SemiBold';
+        font-size: 43px;
+        letter-spacing: normal;
+        line-height: 50.47px;
+        display: flex;
+        margin-left: 330px;
+        margin-top: 10px;
+        &:before {
+            content: '';
+            display: inline-block;
+            width: 15px;
+            height: 157px;
+            background-color: #ff0000;
+            margin-right: 36px;
+        }
+    }
+}
+
+@media (max-width: 1919px) {
+    .box {
+        &__text {
+            margin-left: 200px;
+            font-size: 35px;
+            max-width: 1000px;
+            line-height: 38px;
+        }
+    }
+}

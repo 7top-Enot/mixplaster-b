@@ -1,0 +1,45 @@
+.header {
+  background-color: #181818;
+  padding: 8px 0 9px 5px;
+  border-bottom: 2px solid #d82b2b;
+  position: fixed;
+  top: 0;
+  z-index: 6;
+  width: 100%;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__logo {
+    width: 60px;
+    height: 39px;
+    img {
+      width: 100%;
+    }
+  }
+  &__contacts {
+    color: #ffffff;
+    font-family: 'ALS Schlangesans';
+    font-size: 15px;
+    font-weight: 700;
+    a {
+      color: #ffb400;
+      display: block;
+      text-decoration: none;
+    }
+  }
+  &__menu {
+    color: #ffffff;
+    font-family: 'Akrobat';
+    font-size: 13px;
+    font-weight: 700;
+    span {
+      display: block;
+      width: 32px;
+      height: 3px;
+      background-color: #f7f7f7;
+      margin-bottom: 3px;
+    }
+  }
+}

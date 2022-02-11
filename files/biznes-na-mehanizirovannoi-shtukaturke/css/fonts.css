@@ -1,0 +1,57 @@
+/*@font-face {*/
+/*    font-family: 'Zona Pro';*/
+/*    src: url('../fonts/ZonaPro-Regular.woff2') format('woff2'),*/
+/*        url('../fonts/ZonaPro-Regular.woff') format('woff'),*/
+/*url('../fonts/ZonaPro-Regular.ttf') format('truetype');*/
+/*}*/
+
+/*@font-face {*/
+/*    font-family: "Zona Pro Bold";*/
+/*    src: url('../fonts/ZonaPro-Bold.woff2') format('woff2'),*/
+/*    url('../fonts/ZonaPro-Bold.woff') format('woff'),*/
+/*url('../fonts/ZonaPro-Bold.ttf') format('truetype');*/
+/*}*/
+
+/*@font-face {*/
+/*    font-family: 'Zona Pro ExtraBold';*/
+/*    src: url('../fonts/ZonaPro-ExtraBold.woff2') format('woff2'),*/
+/*    url('../fonts/ZonaPro-ExtraBold.woff') format('woff'),*/
+/*url('../fonts/ZonaPro-ExtraBold.ttf') format('truetype');*/
+/*}*/
+
+/*@font-face {*/
+/*    font-family: 'Zona Pro SemiBold';*/
+/*    src: url('../fonts/ZonaPro-SemiBold.woff2') format('woff2'),*/
+/*    url('../fonts/ZonaPro-SemiBold.woff') format('woff'),*/
+/*url('../fonts/ZonaPro-SemiBold.ttf') format('truetype');*/
+/*}*/
+
+@font-face {
+  font-family: 'Akrobat-ExtraBold';
+  src: url('../fonts/Akrobat-ExtraBold.eot') format('eot'),
+    url('../fonts/Akrobat-ExtraBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Fira Sans Light';
+  src: url('../fonts/FiraSans-Light.woff2') format('woff2'),
+    url('../fonts/FiraSans-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  src: url('../fonts/FiraSans-Regular.woff2') format('woff2'),
+    url('../fonts/FiraSans-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Fira Sans Bold';
+  src: url('../fonts/FiraSans-Bold.woff2') format('woff2'),
+    url('../fonts/FiraSans-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Fira Sans SemiBold';
+  src: url('../fonts/FiraSans-SemiBold.woff2') format('woff2'),
+    url('../fonts/FiraSans-SemiBold.woff') format('woff');
+}

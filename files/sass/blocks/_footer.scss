@@ -1,0 +1,145 @@
+.footer {
+  background-image: url(../img/footer-bg.png);
+  background-repeat: no-repeat;
+  width: 1920px;
+  height: 1050px;
+  margin-top: -72px;
+  padding-top: 110px;
+  position: relative;
+  &__wrap {
+    width: 450px;
+    margin-left: 145px;
+  }
+  &__title {
+    color: #313131;
+    font-family: 'Fira Sans';
+    font-size: 56px;
+    font-weight: 700;
+    display: flex;
+    &:before {
+      content: '';
+      display: inline-block;
+      width: 2px;
+      height: 62px;
+      background-color: #fd2217;
+      margin-right: 26px;
+    }
+  }
+  &__logo {
+    width: 275px;
+    height: 157px;
+    margin-top: 24px;
+    img {
+      width: 100%;
+    }
+  }
+  &__address {
+    color: #141414;
+    font-family: 'Fira Sans';
+    font-size: 26px;
+    font-weight: 400;
+    margin-top: 38px;
+  }
+  &__descr {
+    color: #141414;
+    font-family: 'Fira Sans';
+    font-size: 26px;
+    font-weight: 500;
+    margin-top: 44px;
+  }
+  &__contacts {
+    color: #141414;
+    font-family: 'FiraSans-SemiBold';
+    font-size: 38px;
+    margin-top: 10px;
+    line-height: 40px;
+    span {
+      display: block;
+      margin-top: 5px;
+    }
+  }
+  &__mail {
+    color: #141414;
+    font-family: 'Fira Sans';
+    font-size: 26px;
+    font-weight: 400;
+    margin-top: 24px;
+    a {
+      margin-top: 5px;
+      text-decoration: none;
+      color: #141414;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  &__social {
+    color: #141414;
+    font-family: 'Fira Sans';
+    font-size: 26px;
+    font-weight: 500;
+    display: flex;
+    align-items: flex-end;
+    margin-top: 28px;
+  }
+
+  &__social-insta {
+    display: inline-block;
+    background-image: url(../icons/footer-insta.png);
+    background-repeat: no-repeat;
+    width: 42px;
+    height: 42px;
+    margin-left: 21px;
+    margin-right: 14px;
+  }
+  &__social-vk {
+    background-image: url(../icons/footer-vk.png);
+    background-repeat: no-repeat;
+    width: 42px;
+    height: 42px;
+  }
+  &__question {
+    color: #141414;
+    font-family: 'FiraSans-Heavy';
+    font-size: 26px;
+    margin-top: 58px;
+  }
+  &__btn {
+    width: 450px;
+    height: 82px;
+    background-color: #fd0000;
+    color: #ffffff;
+    font-family: 'Akrobat-ExtraBold';
+    font-size: 53px;
+    border: none;
+    border-radius: 15px;
+    margin-top: 22px;
+    padding-bottom: 8px;
+    outline: 0;
+    cursor: pointer;
+    &:hover {
+      background-color: #e00e0e;
+    }
+  }
+  &__slogan {
+    width: 252px;
+    height: 894px;
+    position: absolute;
+    top: 130px;
+    right: 682px;
+    img {
+      width: 100%;
+    }
+  }
+  &__image {
+    width: 773px;
+    height: 999px;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    z-index: -5;
+    img {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+img{
+  max-width: 100%;
+}
+
+.active {
+  display: block !important;
+}
+
+@import 'blocks/header';
+@import 'blocks/subheader';
+@import 'blocks/descr';
+@import 'blocks/important';
+@import 'blocks/video';
+@import 'blocks/advantages';
+@import 'blocks/slider';
+@import 'blocks/price';
+@import 'blocks/bonus';
+@import 'blocks/delivery';
+@import 'blocks/youtube';
+@import 'blocks/footer';
+@import 'blocks/text';
+@import 'blocks/form';
+@import 'blocks/callback';
+@import 'blocks/mobile-menu';
+@import 'blocks/fixed-footer';
+@import 'blocks/modal-video';
+@import 'blocks/thank';

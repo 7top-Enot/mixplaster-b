@@ -1,0 +1,92 @@
+@font-face {
+  font-family: 'ALS Schlangesans';
+  src: url('../fonts/ALSSchlangesans-Bold.woff') format('woff'),
+    url('../fonts/ALSSchlangesans-Bold.woff2') format('woff2');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'ALS Schlangesans - Black';
+  src: url('../fonts/ALSSchlangesans-Black.woff2') format('woff2'),
+    url('../fonts/ALSSchlangesans-Black.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Akrobat';
+  src: url('../fonts/Akrobat-Light.eot') format('eot'), url('../fonts/Akrobat-Light.woff') format('woff');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Akrobat';
+  src: url('../fonts/Akrobat-Regular.eot') format('eot'), url('../fonts/Akrobat-Regular.woff') format('woff');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Akrobat-ExtraBold';
+  src: url('../fonts/Akrobat-ExtraBold.eot') format('eot'), url('../fonts/Akrobat-ExtraBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Akrobat-SemiBold';
+  src: url('../fonts/Akrobat-SemiBold.eot') format('eot'), url('../fonts/Akrobat-SemiBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  src: url('../fonts/FiraSans-Light.woff2') format('woff2'), url('../fonts/FiraSans-Light.woff') format('woff') ;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  src:url('../fonts/FiraSans-Regular.woff2') format('woff2'), url('../fonts/FiraSans-Regular.woff') format('woff') ;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  src: url('../fonts/FiraSans-Italic.woff2') format('woff2'), url('../fonts/FiraSans-Italic.woff') format('woff') ;
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  src: url('../fonts/FiraSans-Medium.woff2') format('woff2'), url('../fonts/FiraSans-Medium.woff') format('woff') ;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  src: url('../fonts/FiraSans-Bold.woff2') format('woff2'), url('../fonts/FiraSans-Bold.woff') format('woff') ;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'FiraSans-Book';
+  src: url('../fonts/FiraSans-Book.woff2') format('woff2'), url('../fonts/FiraSans-Book.woff') format('woff') ;
+}
+
+@font-face {
+  font-family: 'FiraSans-ExtraBold';
+  src: url('../fonts/FiraSans-ExtraBold.woff2') format('woff2'),url('../fonts/FiraSans-ExtraBold.woff') format('woff') ;
+}
+
+@font-face {
+  font-family: 'FiraSans-Heavy';
+  src: url('../fonts/FiraSans-Heavy.woff2') format('woff2'), url('../fonts/FiraSans-Heavy.woff') format('woff') ;
+
+}
+
+@font-face {
+  font-family: 'FiraSans-SemiBold';
+  src: url('../fonts/FiraSans-SemiBold.woff2') format('woff2'), url('../fonts/FiraSans-SemiBold.woff') format('woff') ;
+}
+
+@font-face {
+  font-family: 'FiraSans-UltraLight';
+  src: url('../fonts/FiraSans-UltraLight.woff2') format('woff2'),
+  url('../fonts/FiraSans-UltraLight.woff') format('woff');
+
+}

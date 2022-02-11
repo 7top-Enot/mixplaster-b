@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Спасибо за заявку!</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <section class="thank">
+      <div class="container">
+        <div class="thank__title">
+          Спасибо за скачивание бонусов.
+          <span style="font-weight: 400; font-size: 20.7px;">наши роботы уже отправили Вам письмо, если его нет в папке "Входящие" проверьте папку "СПАМ"</span>
+        </div>
+        <div class="thank__video">
+          <span>Пока Вы не перешли в почту, посмотрите видеообзор штукатурной станции Mix Plaster 220/380v</span>
+          <div id="video"><img src="img/video-obzor-image.jpg" alt="" />
+          </div>
+        </div>
+        <div class="thank__bottom">
+          <div class="thank__bottom-left">
+            Если Вам срочно нужен ответ, позвоните к нам:<br />
+            <span>8 (861) 29-00-853, +7 (938) 490-00-15, +7 (938) 407-50-17</span>
+          </div>
+          <div class="thank__bottom-right">
+            <a href="/"><img src="img/thank-arrow.png" />Вернуться на сайт</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      let videoWrap = document.querySelector('#video');
+      let videoPreview = document.querySelector('#video img');
+      
+      let video1 = '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/M7lc1UVf-VE?rel=0&showinfo=0&controls=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+
+      videoWrap.addEventListener('click', function() {
+        videoPreview.remove();
+        videoWrap.innerHTML = video1;
+      });
+    </script>
+  </body>
+</html>

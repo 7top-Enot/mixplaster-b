@@ -1,0 +1,263 @@
+.earnings {
+  padding: 35px 0 20px 0;
+  position: relative;
+  &__wrap {
+    display: flex;
+    margin-left: 115px;
+    align-items: center;
+    &:before {
+      content: '';
+      display: inline-block;
+      width: 2px;
+      height: 115px;
+      background-color: #fd2217;
+      margin-right: 20px;
+    }
+  }
+  &__title {
+    color: #313131;
+    font-family: 'Fira Sans';
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 47.25px;
+    width: 791px;
+  }
+  &__title-descr {
+    font-family: 'Fira Sans';
+    font-size: 29px;
+    font-weight: 700;
+    line-height: 47.25px;
+    margin-top: 10px;
+  }
+  &__price {
+    padding: 15px 10px 14px 24px;
+    width: 620px;
+    border: 2px solid #ffb500;
+    color: #000000;
+    font-family: 'Fira Sans';
+    font-size: 22px;
+    font-weight: 400;
+    margin-left: 295px;
+    margin-top: 35px;
+  }
+  &__price-yellow {
+    background-color: #FFB400;
+    font-family: 'FiraSans-SemiBold';
+  }
+  &__box {
+    background-image: url(../img/earning-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 601px;
+    width: 1117px;
+    padding-top: 77px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__green {
+    display: inline-block;
+    background-color: #425b44;
+    color: #ffffff;
+    font-family: 'Fira Sans';
+    font-weight: 700;
+    width: 356px;
+  }
+  &__green-2 {
+    background-color: #425b44;
+    color: #ffffff;
+    font-family: 'Fira Sans';
+    font-weight: 700;
+    width: 356px;
+  }
+  &__item_1 {
+    width: 356px;
+    color: #000000;
+    font-family: 'Fira Sans';
+    font-size: 22px;
+    font-weight: 400;
+    position: relative;
+    margin-left: 179px;
+    &:before {
+      content: '1';
+      display: block;
+      position: absolute;
+      color: #313131;
+      font-family: 'Fira Sans';
+      font-size: 101px;
+      font-weight: 700;
+      line-height: 84.76px;
+      left: -60px;
+      top: -5px;
+    }
+  }
+  &__item_2 {
+    width: 297px;
+    margin-left: 166px;
+    color: #000000;
+    font-family: 'Fira Sans';
+    font-size: 22px;
+    font-weight: 400;
+    position: relative;
+    &:before {
+      content: '2';
+      display: block;
+      position: absolute;
+      color: #313131;
+      font-family: 'Fira Sans';
+      font-size: 101px;
+      font-weight: 700;
+      line-height: 84.76px;
+      left: -70px;
+      top: -5px;
+    }
+  }
+  &__item_3 {
+    width: 339px;
+    margin-left: 186px;
+    color: #000000;
+    font-family: 'Fira Sans';
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 65px;
+    position: relative;
+    &:before {
+      content: '3';
+      display: block;
+      position: absolute;
+      color: #313131;
+      font-family: 'Fira Sans';
+      font-size: 101px;
+      font-weight: 700;
+      line-height: 84.76px;
+      left: -70px;
+      top: -5px;
+    }
+  }
+  &__item_4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 380px;
+    margin-left: 110px;
+    .earnings__subtitle {
+      margin-top: 10px;
+    }
+  }
+  &__subtitle {
+    color: #343434;
+    font-family: 'Fira Sans';
+    font-size: 29px;
+    font-weight: 700;
+    text-align: center;
+    width: 316px;
+    margin-top: 22px;
+  }
+  &__phone {
+    background-image: url(../img/earnings-phone.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 0 61px 0 54px;
+    color: #3c3b3b;
+    font-family: 'Fira Sans';
+    font-size: 21px;
+    font-style: italic;
+    height: 37px;
+    width: 100%;
+    border: 0;
+    margin-top: 25px;
+  }
+  &__btn {
+    width: 321px;
+    height: 38px;
+    background-color: #177a1c;
+    border-radius: 30px;
+    border: none;
+    color: #ffffff;
+    font-family: 'Fira Sans';
+    font-size: 23px;
+    font-weight: 700;
+    margin-top: 20px;
+    outline: 0;
+    cursor: pointer;
+    &:hover {
+      background-color: #196b1d;
+    }
+  }
+  &__descr {
+    color: #343434;
+    font-family: 'FiraSans-UltraLight';
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 15px;
+  }
+  &__image {
+    position: absolute;
+    right: 0;
+    top: -17px;
+  }
+  &__icon {
+    position: absolute;
+    top: 340px;
+    right: 570px;
+  }
+  &__request {
+    position: absolute;
+    background-image: url(../img/earnings-request.png);
+    background-repeat: no-repeat;
+    width: 662px;
+    height: 127px;
+    right: 3px;
+    top: -144px;
+    padding-top: 36px;
+    padding-left: 188px;
+  }
+  &__request-btn {
+    width: 355px;
+    height: 65px;
+    box-shadow: 0 0 86px 6px rgba(255, 0, 0, 0.55);
+    background-color: #fd0000;
+    border: none;
+    color: #ffffff;
+    font-family: 'Akrobat-ExtraBold';
+    font-size: 42px;
+    line-height: 49.29px;
+    border-radius: 10px;
+    cursor: pointer;
+    padding-bottom: 6px;
+    outline: 0;
+    box-shadow: 0 0 86px 6px rgba(255, 0, 0, 0.55);
+    cursor: pointer;
+    &:hover {
+      background-color: #e40e0e;
+    }
+  }
+  &__text {
+    width: 893px;
+    margin-top: 16px;
+    margin-left: 81px;
+    color: #797878;
+    font-family: 'FiraSans-Book';
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 1919px) {
+  .earnings {
+    &__image {
+      display: none;
+    }
+    &__icon {
+      display: none;
+    }
+    &__box {
+      margin: 0 auto;
+    }
+    &__text {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+  }
+  }
+}

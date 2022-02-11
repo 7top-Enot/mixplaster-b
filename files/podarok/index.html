@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Механизированная штукатурка - Штукатурыч</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="lib/formstyler/jquery.formstyler.css" rel="stylesheet" />
+    <link href="lib/formstyler/jquery.formstyler.theme.css" rel="stylesheet" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="lib/formstyler/jquery.formstyler.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script>
+      var count = 20;
+      (function($) {
+        $(function() {
+          $('select').styler({
+            onSelectClosed: function() {
+              $('.calculation__progress span').text(count + ' %');
+              if (count < 100) {
+                count = count + 20;
+              }
+            },
+          });
+        });
+      })(jQuery);
+    </script>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__logo">
+        <img src="img/logo.png" alt="" />
+      </div>
+      <div class="page-header__contacts">
+        <div class="page-header__contacts-phone">+7 (905) 406-13-55</div>
+        <div class="page-header__contacts-city">
+          Краснодар и Краснодарский край
+        </div>
+      </div>
+      <div class="page-header__call">
+        <a href="#openModal" class="page-header__call-btn">Заказать звонок</a>
+        <div class="page-header__call-desc">Приём заявок круглосуточно</div>
+      </div>
+    </header>
+    <header class="mobile-header">
+      <div class="container">
+        <div class="mobile-header__logo">
+          <img src="img/mobile-logo.png" alt="" />
+        </div>
+        <div class="mobile-header__contacts">
+          <div class="mobile-header__desc">Нажмите чтобы позвонить</div>
+          <div class="mobile-header__contacts-phone">
+            <a href="tel:89054061355">+7 (905) 406-13-55</a>
+          </div>
+          <div class="mobile-header__contacts-city">
+            Краснодар и Краснодарский край
+          </div>
+        </div>
+        <div class="mobile-header__menu">
+          <img src="img/mobile-menu.png" />
+        </div>
+      </div>
+    </header>
+    <section class="offer">
+      <div class="overlay">
+        <div class="container">
+          <div class="offer__top">
+            <h1 class="offer__title">Механизированная штукатурка</h1>
+            <p>
+              Качественно и ровно заштукатурим ваши стены за 3 – 5 дней, по цене
+              от 190 р./м2<br />
+              за счет механизированного (машинного) нанесения и вынесем за собой
+              мусор бесплатно.
+            </p>
+          </div>
+          <div class="offer__bottom">
+            <a href="#calc" class="offer__free-calc"
+              >Бесплатный расчёт стоимости</a
+            >
+            <ul class="offer__features">
+              <li class="offer__item">Штукатурим от 80 до 120м2 в смену</li>
+              <li class="offer__item">Даём гарантию на 2 года</li>
+              <li class="offer__item">Выезд на замер бесплатно</li>
+              <li class="offer__item">Сэкономим Ваши деньги на шпаклевании</li>
+              <li class="offer__item">Купим материалы с хорошей скидкой</li>
+              <li class="offer__item">Фиксированная цена без доплат</li>
+            </ul>
+          </div>
+        </div>
+        <video
+          loop=""
+          muted=""
+          autoplay=""
+          poster="img/offer_bg.jpg"
+          class="fullscreen-bg__video"
+        >
+          <source src="video/offer.mp4" type="video/mp4" />
+        </video>
+        <div class="video__bg-black"></div>
+      </div>
+    </section>
+    <section class="specialization">
+      <div class="container">
+        <div class="specialization__img">
+          <img src="img/specialization_img.png" alt="" />
+        </div>
+        <div class="specialization__text">
+          <div class="specialization__title">
+            Мы специализируемся на оштукатуривании:
+          </div>
+          <div class="specialization__desc">
+            Квартир, домов, коттеджей, жилых комплекcов, многоэтажных домов,
+            коммерческой недвижимости, бизнес центров, торговых центров и любых
+            других помещений в Краснодар и Краснодарском крае.
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="calc" class="calculation">
+      <div class="container">
+        <div class="step-1">
+          <div class="calculation__title">
+            Заполните все поля формы для расчёта стоимости
+          </div>
+          <div class="calculation__body">
+            <div class="calculation__form">
+              <form
+                onsubmit="return false"
+                oninput="flevel.value = flevel.valueAsNumber"
+              >
+                <select data-placeholder="Что будете штукатурить?">
+                  <option></option>
+                  <option>Дом / Коттедж / Таунхаус</option>
+                  <option>Квартира</option>
+                  <option>Коммерческая недвижимость</option>
+                  <option>Гос. объект</option>
+                  <option>Коттеджный посёлок</option>
+                  <option>Многоэтажный дом</option>
+                  <option>Другая недвижимость</option>
+                </select>
+                <select data-placeholder="Когда нужно приступить к работе?">
+                  <option></option>
+                  <option>Хоть сегодня</option>
+                  <option>В течении недели</option>
+                  <option>В течении 2 недель</option>
+                  <option>В течении 1 месяца</option>
+                  <option>Более чем через месяц</option>
+                </select>
+                <select
+                  data-placeholder="Сколько м2 площадь объекта? (по полу)"
+                >
+                  <option></option>
+                  <option>от 30 до 70 м2</option>
+                  <option>от 70 до 120 м2</option>
+                  <option>от 120 до 170 м2</option>
+                  <option>от 170 до 230 м2</option>
+                  <option>от 230 до 300 м2</option>
+                  <option>от 300 до 400 м2</option>
+                  <option>от 400 до 700 м2</option>
+                  <option>от 700 до 1200 м2</option>
+                  <option>Я не знаю, необходимо сделать замер</option>
+                  <option>Многоэтажка более 15 000 м2</option>
+                </select>
+                <select data-placeholder="Какой требуется конечный результат?">
+                  <option></option>
+                  <option>Черновое покрытие штукатуркой</option>
+                  <option>Предчистовая покрытие штукатуркой</option>
+                  <option>Чистовое покрытие штукатуркой</option>
+                  <option>Покрытие штукатуркой «Под обои»</option>
+                  <option>Штукатурка + шпаклевка («Под обои/краску»)</option>
+                </select>
+                <div class="calculation__range">
+                  <div class="calculation__range-title">
+                    В какой бюджет необходимо уложиться?
+                  </div>
+                  <input
+                    name="flevel"
+                    id="flying"
+                    type="range"
+                    min="1000"
+                    max="5000000"
+                    value="1000"
+                    step="1000"
+                  />
+                  <div class="calculation__range-subtitle">
+                    Передвигайте ползунок или<br />
+                    введите сумму сюда:
+                    <!-- <output for="flying" name="level">1000</output> -->
+                    <input
+                      class="calculation__range-result"
+                      type="text"
+                      value="Введите сумму"
+                    />
+                    р.
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="calculation__right">
+              <div class="calculation__result">
+                <div class="calculation__progress">
+                  <span>0 %</span> заполнено
+                </div>
+              </div>
+              <button class="calculation__button">Узнать цену</button>
+            </div>
+          </div>
+        </div>
+        <div class="step-2" style="display: none">
+          <div class="calculation__title">
+            Производится отправка данных менеджеру для расчёта
+          </div>
+          <img class="step-2__loading" src="img/loading_image.gif" alt="" />
+          <div class="calculation__time">Осталось <span>2</span> секунды</div>
+        </div>
+        <div class="step-3" style="display: none">
+          <div class="calculation__title">Благодарим за ожидание</div>
+          <div class="calculation__subtitle">
+            Менеджер получил введеные Вами данные
+          </div>
+          <p>
+            Введите номер своего телефона, чтобы мы могли связаться с Вами и
+            сообщить предварительный расчёт стоимости
+          </p>
+          <form
+            action="mail-4.php"
+            method="POST"
+            onsubmit="ym(57714820, 'reachGoal', 'goal1'); return true;"
+          >
+            <input
+              type="text"
+              name="phone"
+              pattern="([0-9]|\+7)[0-9]*"
+              required
+              placeholder="Введите номер Вашего телефона"
+            />
+            <input type="submit" value="Получить стоимость" />
+            <input type="hidden" class="sel1" name="sel1" value="" />
+            <input type="hidden" class="sel2" name="sel2" value="" />
+            <input type="hidden" class="sel3" name="sel3" value="" />
+            <input type="hidden" class="sel4" name="sel4" value="" />
+            <input type="hidden" class="range1" name="range1" value="" />
+            <label class="checkbox">
+              <input type="checkbox" checked />
+              <div class="checkbox__text">
+                Нажимая на кнопку «Получить стоимость» я даю своё согласие на
+                обработку моих персональных данных в соответствии с законом о
+                защите персональных данных РФ и соглашаюсь на получение
+                сообщений и входящих звонков от менеджеров компании для
+                достижения конечного результата.
+              </div>
+            </label>
+          </form>
+        </div>
+        <div class="step-4" style="display: none;">
+          <div class="calculation__title">Благодарим за заявку</div>
+          <p>
+            Наш специалист свяжется с Вами сообщит ориентировочную стоимость и
+            уточнит все детали для точного расчёта.
+          </p>
+          <p>
+            А пока что, посмотрите видео о нашей компании
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="price">
+      <div class="container">
+        <div class="price__title">Цена механизированной штукатурки</div>
+        <div class="price__subtitle--mobile">
+          Выберите интересующий<br />
+          Вас вариант и увидите цену
+        </div>
+        <div class="price__options">
+          <div class="price__options-left">
+            <div class="price__options-title btn-one">Без материала</div>
+            <img
+              class="close-mobile close-one"
+              style="display: none"
+              src="img/close.png"
+            />
+            <div class="price__options-subtitle title-one">
+              Гипсовая штукатурка
+            </div>
+            <div class="price__options-list list-one">
+              <div class="price__options-item">
+                <div class="options-item__title">Под шпаклёвку</div>
+                <div class="options-item__desc">Ещё нужно шпаклевать</div>
+                <ul class="options-item__list">
+                  <li>Завоз материалов</li>
+                  <li>Проведение работ</li>
+                  <li>Уборка</li>
+                  <li>Гарантия 2 года</li>
+                </ul>
+                <div class="options-item__price">от 190 р/м2</div>
+                <a href="#openModal" class="options-item__btn order-1"
+                  >Заказать</a
+                >
+              </div>
+              <div class="options__line"></div>
+              <div class="price__options-item">
+                <div class="options-item__title">Под обои</div>
+                <div class="options-item__desc">Сразу нужно клеить обои</div>
+                <ul class="options-item__list">
+                  <li>Завоз материалов</li>
+                  <li>Проведение работ</li>
+                  <li>Уборка</li>
+                  <li>Гарантия 2 года</li>
+                  <li class="plus">Глянцевание стен</li>
+                  <li class="plus">Экономия на шпаклёвке</li>
+                </ul>
+                <div class="options-item__price">от 220 р/м2</div>
+                <a href="#openModal" class="options-item__btn order-2"
+                  >Заказать</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="price__subtitle--mobile">
+            или
+          </div>
+          <div class="price__options-right">
+            <div class="price__options-title btn-two">С Материалом</div>
+            <p>
+              Смеси, грунтовка, бетоноконтакт, маяки, углы, расходники, доставка
+            </p>
+            <img
+              class="close-mobile close-two"
+              style="display: none"
+              src="img/close.png"
+            />
+            <div class="price__options-subtitle title-two">
+              Гипсовая штукатурка
+            </div>
+            <div class="price__options-list list-two">
+              <div class="price__options-item">
+                <div class="options-item__title">Под шпаклёвку</div>
+                <div class="options-item__desc">Ещё нужно шпаклевать</div>
+                <ul class="options-item__list">
+                  <li class="plus plus-one">Материалы</li>
+                  <li>Завоз материалов</li>
+                  <li>Проведение работ</li>
+                  <li>Уборка</li>
+                  <li>Гарантия 2 года</li>
+                </ul>
+                <div class="options-item__price">от 350 р/м2</div>
+                <a href="#openModal" class="options-item__btn order-3"
+                  >Заказать</a
+                >
+              </div>
+              <div class="options__line"></div>
+              <div class="price__options-item">
+                <div class="options-item__title">Под обои</div>
+                <div class="options-item__desc">Сразу можно клеить обои</div>
+                <ul class="options-item__list">
+                  <li class="plus plus-one">Материалы</li>
+                  <li>Завоз материалов</li>
+                  <li>Проведение работ</li>
+                  <li>Уборка</li>
+                  <li>Гарантия 2 года</li>
+                  <li class="plus">Глянцевание стен</li>
+                  <li class="plus">Экономия на шпаклёвке</li>
+                </ul>
+                <div class="options-item__price">от 380 р/м2</div>
+                <a href="#openModal" class="options-item__btn order-4"
+                  >Заказать</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="order">
+      <div class="container">
+        <div class="order__title">ЗАКАЖИТЕ БЕСПЛАТНЫЙ ЗАМЕР</div>
+        <div class="order__body">
+          <div class="order__text">
+            и мы привезём с собой образцы готовых поверхностей, чтобы Вы могли
+            посмотреть и выбрать результат работы.
+          </div>
+          <div class="order__form">
+            <form
+              action="mail-1.php"
+              method="POST"
+              onsubmit="ym(57714820, 'reachGoal', 'goal2'); return true;"
+            >
+              <input
+                type="text"
+                name="phone"
+                pattern="([0-9]|\+7)[0-9]*"
+                required
+                placeholder="Введите номер телефона"
+              />
+              <input
+                type="hidden"
+                name="form"
+                value="Закажите бесплатный замер"
+              />
+              <button>Заказать замер</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="check-list">
+      <div class="container">
+        <div class="check-list__title">
+          Получите прямо сейчас и бесплатно на свой<br />
+          e-mail чек лист по найму и проверке штукатуров.
+        </div>
+        <div class="check-list__body">
+          <div class="check-list__img">
+            <img src="img/check-list_img.png" alt="" />
+          </div>
+          <div class="check-list__text">
+            <p>В чек лист входит:</p>
+            <ul class="check-list__list">
+              <li class="check-list__item">
+                8 вопросов, которые нужно задать штукатурам перед подписанием
+                договора и правильные ответы на них.
+              </li>
+              <li class="check-list__item">
+                Как правильно ставить задачу штукатурам, чтобы потом, они не
+                просили с Вас дополнительную оплату?
+              </li>
+              <li class="check-list__item">
+                Как правильно проверять и принимать сделанную работу?
+              </li>
+              <li class="check-list__item">
+                ТОП 9 хитростей, которые используют штукатуры для экономии, как
+                их распознать и как их уловки влияют на стены в будущем?
+              </li>
+              <li class="check-list__item">
+                Каких штукатуров не стоит даже вызывать на замеры?
+              </li>
+              <li class="check-list__item">
+                Штукатурный СНИП, которому должно всё соответствовать.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="check-list__form">
+          <form
+            action="mail-2.php"
+            method="POST"
+            onsubmit="ym(57714820, 'reachGoal', 'goal3'); return true;"
+          >
+            <input type="text" name="mail" placeholder="Введите Ваш e-mail" />
+            <input
+              type="text"
+              name="phone"
+              pattern="([0-9]|\+7)[0-9]*"
+              placeholder="Укажите Ваш номер телефона"
+              required
+            />
+            <input type="hidden" name="form" value="Получить чек-лист" />
+            <input type="submit" value="Получить чек лист" />
+            <label class="checkbox">
+              <input type="checkbox" checked />
+              <div class="checkbox__text">
+                Нажимая на кнопку «Получить стоимость» я даю своё согласие на
+                обработку моих персональных данных в соответствии с законом о
+                защите персональных данных РФ и соглашаюсь на получение
+                сообщений и входящих звонков от менеджеров компании для
+                достижения конечного результата.
+              </div>
+            </label>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="video">
+      <div class="container">
+        <!-- <div class="video__title">
+          Посмотрите видео о нашей компании<br />
+          и узнайте как мы добиваемся качества.
+        </div>
+        <iframe
+          class="video__img"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/gcybwzQFm5w"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe> -->
+        <div class="video__desc">Ваши 12 выгод от работы с нами:</div>
+        <ol>
+          <li>
+            Вы экономите на шпаклевании от 180 до 220 руб. с каждого м2 и можете
+            сразу клеить обои.
+          </li>
+          <li>
+            Мы Вас понимаем и поэтому поможем определиться с выбором штукатурной
+            смеси.
+          </li>
+          <li>
+            Подскажем как сэкономить на ремонте и сохранить качество.
+          </li>
+          <li>
+            Подскажем где купить или купим за Вас все материалы со скидками и по
+            специальным ценам.
+          </li>
+          <li>
+            Уберём мусор за собой.
+          </li>
+          <li>
+            Привезём с собой на замер и покажем Вам для выбора образцы итоговой
+            работы.
+          </li>
+          <li>
+            Сразу зафиксируем итоговую стоимость в договоре и будем работать без
+            сюрпризов и доплат.
+          </li>
+
+          <li>
+            Вы получите результат соответствующий современному стандарту
+            качества СНиП 71.13330.2017, это значит что Ваши стены будут
+            идеально ровные.
+          </li>
+          <li>
+            Штукатурка будет держаться на стене как влитая, т.к. мы наносим её
+            под давлением.
+          </li>
+          <li>
+            Ценим Ваше время и за 1 смену делаем объем от 80 до 130м2.
+          </li>
+          <li>
+            Вы получите прочные стены, т.к. механическое нанесение делает более
+            качественную консистенцию раствора, что исключает появление трещин
+            при высыхании.
+          </li>
+          <li>
+            Механизированная штукатурка выгодней, т.к. стоимость материалов
+            дешевле на 25-30% чем для ручного нанесения, а качество при этом
+            получается на много лучше.
+          </li>
+        </ol>
+      </div>
+    </section>
+    <section class="portfolio">
+      <div class="container">
+        <div class="portfolio__title">Посмотрите, некоторые из наших работ</div>
+        <div class="portfolio__desc">Чтобы увеличить, нажмите на фото.</div>
+        <div class="portfolio__photos">
+          <a data-fancybox="gallery" href="img/portfolio/a1.jpg"
+            ><img src="img/portfolio-1.jpg" alt=""
+          /></a>
+          <a data-fancybox="gallery" href="img/portfolio/a2.jpg"
+            ><img src="img/portfolio-2.jpg" alt=""
+          /></a>
+          <a data-fancybox="gallery" href="img/portfolio/a3.jpg"
+            ><img src="img/portfolio-3.jpg" alt=""
+          /></a>
+          <a data-fancybox="gallery" href="img/portfolio/a4.jpg"
+            ><img src="img/portfolio-4.jpg" alt=""
+          /></a>
+          <a data-fancybox="gallery" href="img/portfolio/a5.jpg"
+            ><img src="img/portfolio-5.jpg" alt=""
+          /></a>
+          <a data-fancybox="gallery" href="img/portfolio/a6.jpg"
+            ><img src="img/portfolio-6.jpg" alt=""
+          /></a>
+          <a data-fancybox="gallery" href="img/portfolio/a7.jpg"
+            ><img src="img/portfolio-7.jpg" alt=""
+          /></a>
+          <a data-fancybox="gallery" href="img/portfolio/a8.jpg"
+            ><img src="img/portfolio-8.jpg" alt=""
+          /></a>
+          <a data-fancybox="gallery" href="img/portfolio/a9.jpg"
+            ><img src="img/portfolio-9.jpg" alt=""
+          /></a>
+          <a data-fancybox="gallery" href="img/portfolio/a10.jpg"
+            ><img src="img/portfolio-10.jpg" alt=""
+          /></a>
+          <a data-fancybox="gallery" href="img/portfolio/a11.jpg"
+            ><img src="img/portfolio-11.jpg" alt=""
+          /></a>
+          <a data-fancybox="gallery" href="img/portfolio/a12.jpg"
+            ><img src="img/portfolio-12.jpg" alt=""
+          /></a>
+          <a data-fancybox="gallery" href="img/portfolio/a13.jpg"
+            ><img src="img/portfolio-13.jpg" alt=""
+          /></a>
+          <a data-fancybox="gallery" href="img/portfolio/a14.jpg"
+            ><img src="img/portfolio-14.jpg" alt=""
+          /></a>
+          <a data-fancybox="gallery" href="img/portfolio/a15.jpg"
+            ><img src="img/portfolio-16.jpg" alt=""
+          /></a>
+          <a data-fancybox="gallery" href="img/portfolio/a16.jpg"
+            ><img src="img/portfolio-15.jpg" alt=""
+          /></a>
+        </div>
+      </div>
+    </section>
+    <section class="contacts">
+      <div class="container">
+        <div class="contacts__logo">
+          <img src="img/contacts_logo.png" alt="" />
+        </div>
+        <div class="contacts__content">
+          <div class="contacts__content-title">Контакты:</div>
+          <div class="contacts__phone">
+            Тел.: <a href="tel:89054061355">8 (905) 406 13 55</a><br />
+            Тел.: <a href="tel:89002584072">8 (900) 258 40 72</a><br />
+            <span>e-mail: shtukaturich@yandex.ru</span>
+          </div>
+          <div class="contacts__content-title">Остались вопросы?</div>
+          <div class="contacts__content-subtitle">
+            Оставьте заявку и мы перезвоним
+          </div>
+          <form
+            action="mail-1.php"
+            method="POST"
+            onsubmit="ym(57714820, 'reachGoal', 'goal4'); return true;"
+          >
+            <input
+              type="text"
+              name="phone"
+              pattern="([0-9]|\+7)[0-9]*"
+              required
+              placeholder="Укажите Ваш номер телефона"
+            />
+            <input type="hidden" name="form" value="Остались вопросы?" />
+            <input type="submit" value="Оставить заявку" />
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="page-footer">
+      <!-- <div class="footer__top">
+        <div class="container">
+          По вопросам подключения к франшизе, перейдите на сайт
+          <a href="https://franshiza.ru">www.franshiza.ru</a>
+        </div>
+      </div> -->
+      <div class="footer__bottom">
+        <div class="container">
+          Внимание! Все материалы на данном сайте, защищены законом об
+          интелектуальной собственности и авторским правом.<br />
+          Любое копирование и распространение в коммерческих целях информации с
+          данного сайта, будет без предупреждения приследоваться по закону!
+        </div>
+      </div>
+    </footer>
+    <div class="mobile-footer">
+      <div class="container">
+        <div class="mobile-footer__one">
+          <a href="tel:89054061355"
+            ><img src="img/mfooter1.png" /> Позвонить менеджеру в 1 клик</a
+          >
+        </div>
+        <div class="mobile-footer__two">
+          <a href="https://api.whatsapp.com/send?phone=79054061355"
+            ><img src="img/mfooter2.png" /> Задать вопрос в WhatsApp</a
+          >
+        </div>
+        <div class="mobile-footer__three">
+          <a href="viber://chat?number=+79054061355"
+            ><img src="img/mfooter3.png" /> Задать вопрос в Viber</a
+          >
+        </div>
+      </div>
+    </div>
+    <div id="openModal" class="modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <a href="#close" title="Close" class="close">×</a>
+          <div class="modal-body">
+            <form
+              action="mail.php"
+              method="POST"
+              class="modal__form"
+              onsubmit="ym(57714820, 'reachGoal', 'goal5'); return true;"
+            >
+              <img class="modal__logo" src="img/logo.png" />
+              <div class="modal__title">Заполните поля в данной форме</div>
+              <input type="text" name="name" placeholder="Введите Ваше имя" />
+              <input
+                type="text"
+                name="phone"
+                pattern="([0-9]|\+7)[0-9]*"
+                required
+                placeholder="Укажите Ваш номер телефона"
+              />
+              <input type="submit" value="Отправить заявку" />
+              <input type="hidden" name="form" value="Обратный звонок" />
+              <label class="checkbox">
+                <input type="checkbox" checked="" />
+                <div class="checkbox__text">
+                  Нажимая на кнопку «Получить стоимость» я даю своё согласие на
+                  обработку моих персональных данных в соответствии с законом о
+                  защите персональных данных РФ и соглашаюсь на получение
+                  сообщений и входящих звонков от менеджеров компании для
+                  достижения конечного результата.
+                </div>
+              </label>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      let range = document.querySelector('#flying');
+      let rangeResult = document.querySelector('.calculation__range-result');
+      range.addEventListener('mousedown', function() {
+        range.addEventListener('mousemove', function() {
+          let rangeValue = document.querySelector('#flying').value;
+          rangeResult.value = rangeValue;
+        });
+      });
+      range.addEventListener('touchmove', function() {
+        let rangeValue = document.querySelector('#flying').value;
+        rangeResult.value = rangeValue;
+      });
+      range.addEventListener('click', function() {
+        $('.calculation__progress span').text(count + ' %');
+      });
+      rangeResult.addEventListener('click', function() {
+        $('.calculation__progress span').text(count + ' %');
+      });
+    </script>
+    <script>
+      var calculationBtn = document.querySelector('.calculation__button');
+      var step1 = document.querySelector('.step-1');
+      var step2 = document.querySelector('.step-2');
+      var step3 = document.querySelector('.step-3');
+      var calcTime = document.querySelector('.calculation__time span');
+      var time = 3;
+      calculationBtn.addEventListener('click', function() {
+        step1.style.display = 'none';
+        step2.style.display = 'flex';
+
+        function changeTime() {
+          calcTime.innerHTML = time;
+          --time;
+        }
+        function showStep() {
+          step2.style.display = 'none';
+          step3.style.display = 'flex';
+        }
+        setInterval(changeTime, 1000);
+        setTimeout(showStep, 5000);
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="lib/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="lib/slick/slick-theme.css" />
+    <script type="text/javascript" src="lib/slick/slick.min.js"></script>
+
+    <script>
+      let btn1 = document.querySelector('.btn-one');
+      let btn2 = document.querySelector('.btn-two');
+      let list1 = document.querySelector('.list-one');
+      let list2 = document.querySelector('.list-two');
+      let title1 = document.querySelector('.title-one');
+      let title2 = document.querySelector('.title-two');
+      let close1 = document.querySelector('.close-mobile.close-one');
+      let close2 = document.querySelector('.close-mobile.close-two');
+      btn1.addEventListener('click', function() {
+        list1.classList.toggle('price__options-list--active');
+        title1.classList.toggle('price__options-list--active');
+        close1.classList.toggle('close-mobile--active');
+      });
+      btn2.addEventListener('click', function() {
+        list2.classList.toggle('price__options-list--active');
+        title2.classList.toggle('price__options-list--active');
+        close2.classList.toggle('close-mobile--active');
+      });
+      close1.addEventListener('click', function() {
+        list1.classList.remove('price__options-list--active');
+        title1.classList.remove('price__options-list--active');
+        close1.classList.remove('close-mobile--active');
+      });
+      close2.addEventListener('click', function() {
+        list2.classList.remove('price__options-list--active');
+        title2.classList.remove('price__options-list--active');
+        close2.classList.remove('close-mobile--active');
+      });
+    </script>
+    <script>
+      $('input').on('input invalid', function() {
+        this.setCustomValidity('');
+        if (this.validity.patternMismatch) {
+          this.setCustomValidity('Укажите номер телефона цифрами');
+        }
+      });
+    </script>
+    <script>
+      let order1 = document.querySelector('.order-1');
+      let order2 = document.querySelector('.order-2');
+      let order3 = document.querySelector('.order-3');
+      let order4 = document.querySelector('.order-4');
+      let modalForm = document.querySelector('.modal form');
+      let hidden = document.querySelector('.modal input[type="hidden"]');
+      order1.addEventListener('click', function() {
+        hidden.value = 'Без материала Под шпаклевку';
+        modalForm.setAttribute(
+          'onsubmit',
+          "ym(57714820, 'reachGoal', 'goal6'); return true;"
+        );
+      });
+      order2.addEventListener('click', function() {
+        hidden.value = 'Без материала Под обои';
+        modalForm.setAttribute(
+          'onsubmit',
+          "ym(57714820, 'reachGoal', 'goal7'); return true;"
+        );
+      });
+      order3.addEventListener('click', function() {
+        hidden.value = 'С материалом Под шпаклевку';
+        modalForm.setAttribute(
+          'onsubmit',
+          "ym(57714820, 'reachGoal', 'goal8'); return true;"
+        );
+      });
+      order4.addEventListener('click', function() {
+        hidden.value = 'С материалом Под обои';
+        modalForm.setAttribute(
+          'onsubmit',
+          "ym(57714820, 'reachGoal', 'goal9'); return true;"
+        );
+      });
+    </script>
+    <script>
+      let calcButton = document.querySelector('.calculation__button');
+      let sel1 = document.querySelector('.sel1');
+      let sel2 = document.querySelector('.sel2');
+      let sel3 = document.querySelector('.sel3');
+      let sel4 = document.querySelector('.sel4');
+      let range1 = document.querySelector('.range1');
+      calcButton.addEventListener('click', function() {
+        let sel = document.querySelectorAll('select');
+        let range = document.querySelector('#flying');
+        sel1.value = sel[0].value;
+        sel2.value = sel[1].value;
+        sel3.value = sel[2].value;
+        sel4.value = sel[3].value;
+        range1.value = range.value;
+      });
+    </script>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function(m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function() {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        (k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          a.parentNode.insertBefore(k, a);
+      })(
+        window,
+        document,
+        'script',
+        'https://mc.yandex.ru/metrika/tag.js',
+        'ym'
+      );
+
+      ym(57714820, 'init', {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true,
+      });
+    </script>
+    <noscript
+      ><div>
+        <img
+          src="https://mc.yandex.ru/watch/57714820"
+          style="position:absolute; left:-9999px;"
+          alt=""
+        /></div
+    ></noscript>
+    <!-- /Yandex.Metrika counter -->
+  </body>
+</html>

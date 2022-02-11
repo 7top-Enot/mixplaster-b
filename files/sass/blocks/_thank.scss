@@ -1,0 +1,92 @@
+.thank {
+  padding-top: 78px;
+  padding-bottom: 70px;
+  .container {
+    max-width: 1309px;
+  }
+  &__title {
+    color: #313131;
+    font-family: 'Fira Sans';
+    font-size: 63px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 73.17px;
+    border-left: 2px solid #da271e;
+    padding-left: 27px;
+
+    span {
+      color: #313131;
+      font-family: 'Fira Sans';
+      font-size: 33px;
+      font-weight: 700;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: 33.17px;
+      display: block;
+    }
+  }
+  &__video {
+    padding-top: 55px;
+    text-align: center;
+    color: #313131;
+    font-family: 'Fira Sans';
+    font-size: 29px;
+    font-weight: 500;
+    width: 742px;
+    margin: 0 auto;
+  }
+  #video {
+    margin-top: 27px;
+    height: 420px;
+    cursor: pointer;
+    position: relative;
+  }
+  .video-play {
+    background-image: url(../img/play.png);
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 32%;
+    background-size: contain;
+}
+  &__bottom {
+    padding-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    &-left {
+      width: 649px;
+      color: #313131;
+      font-family: 'Fira Sans';
+      font-size: 29px;
+      font-weight: 500;
+      span {
+        color: #313131;
+        font-family: 'FiraSans-SemiBold';
+        font-size: 25.7px;
+        font-weight: 400;
+      }
+    }
+    &-right {
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 370px;
+        height: 57px;
+        border: 3px solid black;
+        color: #313131;
+        font-family: 'Fira Sans';
+        font-size: 33px;
+        font-weight: 500;
+        text-decoration: none;
+      }
+      img {
+        margin-right: 27px;
+      }
+    }
+  }
+}

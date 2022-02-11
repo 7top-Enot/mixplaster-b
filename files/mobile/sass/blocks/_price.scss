@@ -1,0 +1,186 @@
+.price {
+  padding: 41px 0 25px 0;
+  &__title {
+    color: #313131;
+    font-family: 'Fira Sans';
+    font-size: 126px;
+    font-weight: 700;
+    text-align: left;
+    line-height: 106.23px;
+  }
+  &__caption {
+    color: #313131;
+    font-family: 'Fira Sans';
+    font-size: 28px;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    font-weight: 700;
+    margin-top: 10px;
+    text-align: left;
+  }
+  &__heading {
+    color: #313131;
+    font-family: 'Fira Sans';
+    font-size: 19px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 23.58px;
+    text-align: left;
+  }
+  &__wrap {
+    width: 294px;
+    margin: 0 auto;
+    position: relative;
+    &:before {
+      content: '';
+      display: inline-block;
+      width: 1px;
+      height: 163px;
+      background-color: #da271e;
+      position: absolute;
+      top: 5px;
+      left: -13px;
+    }
+  }
+  &__wrapper {
+    background-image: url(../img/price-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 1300px;
+    margin-top: 15px;
+  }
+  &__descr {
+    color: #000000;
+    font-family: 'Fira Sans';
+    font-size: 20px;
+    font-weight: 400;
+    padding: 29px 9px 15px 13px;
+  }
+  &__descr-mark {
+    font-family: 'FiraSans-SemiBold';
+    background-color: #ffb400;
+  }
+  &__descr-big {
+    font-family: 'FiraSans-SemiBold';
+    font-size: 23px;
+    background-color: #ffb400;
+  }
+  &__equipment {
+    color: #000000;
+    font-family: 'FiraSans-SemiBold';
+    font-size: 23px;
+    padding: 7px 0px 12px 12px;
+    margin-top: 35px;
+  }
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 8px;
+    li {
+      color: #45464e;
+      font-family: 'Fira Sans';
+      font-size: 15px;
+      font-weight: 400;
+      padding: 0;
+      span {
+        color: #3c3d41;
+        font-family: 'FiraSans-SemiBold';
+      }
+    }
+  }
+  &__characteristics {
+    color: #000000;
+    font-family: 'FiraSans-SemiBold';
+    font-size: 23px;
+    margin-top: 55px;
+    padding: 7px 0 0 12px;
+  }
+  &__item {
+    color: #45464e;
+    font-family: 'Fira Sans';
+    font-size: 15px;
+    font-weight: 400;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 16px;
+  }
+  &__item-red {
+    color: #da271e;
+    font-family: 'Fira Sans';
+    font-weight: 400;
+  }
+  &__item-mark {
+    color: #111111;
+    font-family: 'Fira Sans';
+    font-weight: 700;
+  }
+  &__item-black {
+    color: #000000;
+    font-family: 'Fira Sans';
+    font-weight: 500px;
+  }
+  &__details {
+    margin-top: 76px;
+    padding: 19px 0 14px 0;
+  }
+  &__details-title {
+    color: #343434;
+    font-family: 'Fira Sans';
+    font-size: 21px;
+    font-weight: 700;
+    text-align: center;
+  }
+  &__form {
+    margin-top: 20px;
+    input {
+      display: block;
+      background: none;
+      outline: none;
+      background-image: url(../img/price-form.png);
+      background-repeat: no-repeat;
+      border: none;
+      width: 280px;
+      height: 31px;
+      color: #3c3b3b;
+      font-family: 'Fira Sans';
+      font-size: 15px;
+      font-style: italic;
+      padding: 10px 45px 8px 40px;
+      margin: 0 auto;
+      &::-webkit-input-placeholder {
+        color: #3c3b3b;
+      }
+    }
+  }
+  &__btn {
+    outline: none;
+    width: 235px;
+    height: 27px;
+    background-color: #177a1c;
+    color: #ffffff;
+    font-family: 'Fira Sans';
+    font-size: 17px;
+    font-weight: 700;
+    border: none;
+    border-radius: 30px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+    &:hover {
+      background-color: #ff8a00;
+    }
+  }
+  &__details-descr {
+    color: #343434;
+    font-family: 'FiraSans-UltraLight';
+    font-size: 12px;
+    width: 283px;
+    margin: 0 auto;
+    margin-top: 17px;
+  }
+}
